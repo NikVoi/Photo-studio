@@ -13,4 +13,17 @@ nav {
 
     color: $textGrey;
     font-weight: 500;
+
+    &-footer {
+        font-size: $fs16;
+        margin-right: 50px;
+
+        font-weight: 700;
+    }
+}
+
+.nav__footer {
+    display: flex;
+    flex-wrap: wrap;
+    
 }
