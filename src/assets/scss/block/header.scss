@@ -1,0 +1,45 @@
+header {
+    height: 80px;
+}
+
+.header__wrapper {
+    display: flex;
+    justify-content: space-between;
+
+    margin-top: 23px;
+    margin-bottom: 22px;
+}
+
+.header__logo {
+    width: 108px;
+    height: 35px;
+
+    & .header__logo-img {
+        width: 108px;
+        height: 35px;
+    }
+}
+
+.header__mobile {display: none;}
+
+.header__info {display: flex}
+
+.header__button{
+    display: flex;
+    align-items: center;
+
+    margin-right: $fs24;
+}
+
+.header__tel{
+    display: flex;
+    align-items: center;
+
+    font-size: $fs14;
+    font-weight: 600;
+    color: $textGrey;
+
+    & svg {
+        display: none;
+    }
+}

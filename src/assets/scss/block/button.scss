@@ -1,0 +1,21 @@
+.button {
+    width: 200px;
+    height: 30px;
+
+    padding: 8px 24px;
+
+    font-size: $fs12;
+    text-transform: uppercase;
+    text-align: center;
+    color: $accentCol;
+
+    border: 2px solid $accentCol;
+    border-radius: 10px;
+
+    &:hover {
+        transition: .3s;
+
+        background-color: $accentCol;
+        color: $white
+    }
+}

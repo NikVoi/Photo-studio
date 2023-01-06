@@ -1,0 +1,13 @@
+@media (max-width: 1080px) {
+  .container {
+    width: 864px;
+    margin: 0 auto;
+  }
+  .header__wrapper {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  .header__info {
+    display: block;
+  }
+}

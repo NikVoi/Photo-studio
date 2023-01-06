@@ -1,0 +1,16 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+    height: 35px;
+}
+
+.nav__item {
+    font-size: $fs14;
+    margin-right: $fs32;
+
+    color: $textGrey;
+    font-weight: 500;
+}

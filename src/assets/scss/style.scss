@@ -1,5 +1,31 @@
+@import "__vars.scss";
+@import "reset.scss";
+@import "../scss/block/header.scss";
+@import "../scss/block/nav.scss";
+@import "../scss/block/button.scss";
+
+@import "../scss/block/footer.scss";
+
+
 body {
-    background-color: black;
+    background-color: $white;
+    font-family: "Montserrat";
     font-size: 21px;
-    color: white;
+    color: $black;
 }
+
+.container {
+    width: 1240px;
+    margin: 0 auto;
+}
+
+a {
+    color: $textBlack;
+
+    &:hover{
+        transition: .3s;
+        color: $accentCol;
+    }
+}
+
+@import "../scss/block/media.scss";
