@@ -61,6 +61,53 @@
         padding: 8px 12.5px;
 
         font-size: $fs11;
+
+        &-main {
+            width: 366px;
+            height: 64px;
+    
+            padding: 22px 0;
+            
+            
+            font-size: $fs16;
+            color: $white;
+            letter-spacing: 3px;
+            font-weight: 600;
+        
+            background: linear-gradient(180deg, #FFA96B -21.43%, #EE7A28 100%);
+            border-radius: 10px;
+    
+            &:hover {background: linear-gradient(180deg, #FFA96B 58.75%, #EE7A28 173.44%);}
+        }
+    }
+
+    .main {
+        position: relative;
+
+        background: #444;
+        color: $white;
+    
+        padding-top: 70px;
+        padding-bottom: 70px;
+    }
+
+    h1 {
+        width: 600px;
+    
+        letter-spacing: 2.3px;
+        font-size: $fs48;
+    }
+    
+    h2 {
+        width: 530px;
+    
+        padding-top: 32px;
+    
+        font-size: $fs36;
+    }
+
+    .main__description {
+        width: 730px;
     }
 
     .nav__footer {
@@ -78,6 +125,10 @@
     .container {
         width: calc(100% - 16px);
         margin: 0 auto;
+    }
+
+    header {
+        height: 40px;
     }
 
     .header__wrapper {
@@ -172,6 +223,90 @@
             border-radius: 10px;
         }
     }
+
+    .button {
+        &-main {
+            display: block;
+
+            width: 320px;
+            font-size: $fs14;
+            margin: 0 auto;
+        }
+    }
+
+    .main {
+        height: 522px;
+    
+        padding-top: 182px;
+        padding-bottom: 184px;
+    }
+
+    h1 {
+        width: 100%;
+
+        padding-bottom: 32px;
+
+        letter-spacing: 1.2px;
+        font-size: $fs24;
+        text-align: center;
+    }
+    
+    h2 {
+        display: none;
+    }
+
+    .main__description {
+        display: none;
+    }
+
+    .menu{
+        display: block;
+        transition: .5s;
+        position: fixed;  
+        z-index: 2;
+
+        left: 100%;
+
+        width: 100%;
+        height: 522px;
+        
+        background: rgba(15, 15, 15, 0.7);
+
+        &.active {
+            transition: .5s;
+            left: 0;
+        }
+    }
+
+    .menu__item{
+        text-align: right;
+        
+        margin-top: 16px;
+        margin-right: 16px;
+
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 20px;
+
+        & a {
+            color: $white;
+
+            &:active {
+                transition: .3s;
+                color: $accentCol;
+            }
+        }
+    }
+
+
+
+
+
+
+
+
+
+
 
     footer {
         height: 524px;

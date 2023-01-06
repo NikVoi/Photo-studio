@@ -3,6 +3,7 @@
 @import "../scss/block/header.scss";
 @import "../scss/block/nav.scss";
 @import "../scss/block/button.scss";
+@import "../scss/block/main.scss";
 
 @import "../scss/block/footer.scss";
 
@@ -10,8 +11,10 @@
 body {
     background-color: $white;
     font-family: "Montserrat";
-    font-size: 16px;
+    font-size: $fs16;
     color: $black;
+
+    overflow-x: hidden;
 }
 
 .container {
@@ -35,5 +38,12 @@ hr {
 
     border-top: 1px solid $gray; 
 }
+
+.menu {
+    display: block;
+    position: fixed;
+    left: 100%
+}
+
 
 @import "../scss/block/media.scss";
