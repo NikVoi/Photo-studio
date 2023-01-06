@@ -38,4 +38,24 @@
 
         &:hover {background: linear-gradient(180deg, #FFA96B 58.75%, #EE7A28 173.44%);}
     }
+
+    &-location {
+        margin: 0 auto;
+
+        width: 336px;
+        height: 48px;
+
+        padding: 15px 0;
+        
+        
+        font-size: $fs16;
+        color: $white;
+        letter-spacing: 3px;
+        font-weight: 600;
+    
+        background: linear-gradient(180deg, #FFA96B -21.43%, #EE7A28 100%);
+        border-radius: 10px;
+
+        &:hover {background: linear-gradient(180deg, #FFA96B 58.75%, #EE7A28 173.44%);}
+    }
 }

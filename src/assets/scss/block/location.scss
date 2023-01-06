@@ -1,0 +1,110 @@
+.location {
+    position: relative;
+    height: 720px;
+
+    padding-top: 60px;
+    padding-bottom: 80px;
+
+    background-image: url('../images/bg-line.png');
+    background-position: 0px 30px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+}
+
+.location__title {
+    font-family: 'Futura LT';
+
+    margin-bottom: 70px;
+
+    text-align: center;
+    font-weight: 700;
+    color: $textBlack;
+    font-size: 36px;
+    line-height: 120%;
+}
+
+.location__wrapper {
+    display: flex;
+
+    margin-bottom: 56px;
+
+    overflow: hidden;
+
+    & span {
+        position: absolute;
+        bottom: 0;
+        left: 32px;
+
+        color: $white;
+
+        font-style: normal;
+        font-weight: 700;
+        font-size: $fs18;
+        line-height: 120%;
+    }
+}
+
+.location__item {
+    position: relative;
+    z-index: 1;
+
+    width: 430px;
+    height: 370px;
+
+    margin-right: 27px;
+
+    border-radius: 10px;
+
+    cursor: pointer;
+
+    & img {
+        width: 395px;
+        height: 350px;
+        border-radius: 10px;
+    }
+
+    &:hover .location__name {
+        transition: .5s;
+        bottom: 50px;
+    }
+   
+}
+
+.button__slide {
+    position: absolute;
+    left: 15px;
+    top: 321px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: $white;
+    width: 73px;
+    height: 73px;
+
+    border-radius: 50%;
+
+    z-index: 2;
+
+    cursor: pointer;
+
+
+    &-right {
+        position: absolute;
+        left: 1260px;
+        top: 321px;
+
+        transform: rotate(180deg);
+    }
+    
+
+    & svg {
+        fill: $white;
+        width: 20px;
+        height: 40px;
+    }
+}
+
+

@@ -4,6 +4,8 @@
 @import "../scss/block/nav.scss";
 @import "../scss/block/button.scss";
 @import "../scss/block/main.scss";
+@import "../scss/block/location.scss";
+@import "../scss/block/dacoration.scss";
 
 @import "../scss/block/footer.scss";
 
@@ -39,11 +41,7 @@ hr {
     border-top: 1px solid $gray; 
 }
 
-.menu {
-    display: block;
-    position: fixed;
-    left: 100%
-}
+
 
 
 @import "../scss/block/media.scss";
