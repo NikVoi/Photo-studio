@@ -27,7 +27,6 @@
 
         padding: 22px 0;
         
-        
         font-size: $fs16;
         color: $white;
         letter-spacing: 3px;
@@ -47,7 +46,6 @@
 
         padding: 15px 0;
         
-        
         font-size: $fs16;
         color: $white;
         letter-spacing: 3px;
@@ -57,5 +55,39 @@
         border-radius: 10px;
 
         &:hover {background: linear-gradient(180deg, #FFA96B 58.75%, #EE7A28 173.44%);}
+    }
+}
+
+.button__slide {
+    position: absolute;
+    left: -38px;
+    top: 150px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: $white;
+    width: 73px;
+    height: 73px;
+
+    border-radius: 50%;
+
+    z-index: 2;
+
+    cursor: pointer;
+
+    &-right {
+        position: absolute;
+        left: 1207px;
+        top: 150px;
+
+        transform: rotate(180deg);
+    }
+
+    & svg {
+        fill: $white;
+        width: 20px;
+        height: 40px;
     }
 }

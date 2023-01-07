@@ -1,4 +1,4 @@
-.location {
+location{
     position: relative;
     height: 720px;
 
@@ -9,12 +9,16 @@
     background-position: 0px 30px;
     background-repeat: no-repeat;
     background-size: 100%;
+}
 
+.location > .container {
+    position: relative;
 }
 
 .location__title {
     font-family: 'Futura LT';
 
+    padding-top: 60px;
     margin-bottom: 70px;
 
     text-align: center;
@@ -71,40 +75,13 @@
    
 }
 
-.button__slide {
-    position: absolute;
-    left: 15px;
-    top: 321px;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    background: $white;
-    width: 73px;
-    height: 73px;
-
-    border-radius: 50%;
-
-    z-index: 2;
-
-    cursor: pointer;
-
-
-    &-right {
-        position: absolute;
-        left: 1260px;
-        top: 321px;
-
-        transform: rotate(180deg);
-    }
-    
-
-    & svg {
-        fill: $white;
-        width: 20px;
-        height: 40px;
-    }
+.location__buttons {
+    position: relative;
+    height: inherit;
 }
+
+
+
+
 
 
