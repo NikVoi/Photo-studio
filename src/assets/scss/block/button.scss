@@ -91,3 +91,45 @@
         height: 40px;
     }
 }
+
+.button__open {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    position: absolute;
+    top: 430px;
+    right: 0;
+
+    color: $accentCol;
+    font-size: $fs16;
+
+    cursor: pointer;
+    transition: 1s;
+
+    & svg {
+        transition: 1s;
+        margin-left: 16px;
+        transform: rotate(-90deg);
+
+        width: 10px;
+        height: 21px;
+        fill: $firstBG;
+    }
+
+    &.active {
+        transition: 1s;
+        top: 1350px;
+        right: 0;
+
+        & svg {
+            transition: 1s;
+            margin-left: 16px;
+            transform: rotate(90deg);
+    
+            width: 10px;
+            height: 21px;
+            fill: $firstBG;
+        }
+    }
+}
