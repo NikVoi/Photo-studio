@@ -422,6 +422,92 @@
     
     }
 
+    .reviews {
+        padding: 100px 0 120px;
+    }
+    
+    .reviews__title {font-size: $fs30;}
+    
+    .reviews__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    
+        height: 465px;
+    }
+    
+    .reviews__slider {
+        display: flex;
+    
+        width: 700px;
+        height: 100%;
+    
+        overflow: hidden;
+    }
+    
+    .reviews__slides {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    
+        height: 100%;
+    
+        margin-right: 20px;
+    }
+    
+    .button__slide-reviews {
+        position: static;
+
+        &-right {
+            position: static;
+        }
+
+        box-shadow: 0px 0px 10px -0px rgba(0,0,0,.2);
+    }
+
+    .reviews__comment {
+        margin-right: 20px;
+    }
+    
+    .reviews__img {
+        width: 240px;
+        height: 250px;
+    }
+    
+    .reviews__img-1 {
+        background-image: url("/assets/images/reviews/bg-2.png");
+        background-repeat: no-repeat;
+        background-position: top -5px left 10px;
+    }
+    
+    .reviews__img-2 {
+        background-image: url("/assets/images/reviews/bg-1.png");
+        background-repeat: no-repeat;
+        background-position: top -2px left;
+    }
+    
+    .reviews__img-3 {
+        background-image: url("/assets/images/reviews/bg-3.png");
+        background-repeat: no-repeat;
+        background-position: top 5px  left -5px;
+    }
+    
+    .button__reviews {
+        display: none;
+
+        margin: 40px auto;
+
+        &-mobile {
+            display: flex; 
+            width: 342px;
+        }
+    }
+
+
+
+
+
+
 
 
     .nav__footer {
@@ -1160,7 +1246,124 @@
         &:hover {background: linear-gradient(180deg, #FFA96B 58.75%, #EE7A28 173.44%);}
     }
 
+    .reviews {
+        padding: 60px 0 60px;
+    }
+    
+    .reviews__title {
+        margin-bottom: 40px;
+    
+        font-size: $fs24;
+        line-height: 140%;
+    }
+    
+    .reviews__wrapper {
+        position: relative;
+        display: flex;
+        align-items: center;
 
+        margin: 0 auto;
+        
+        width: 340px;
+        height: 456px;
+    }
+    
+    .reviews__slider {
+        width: auto;
+        height: 100%;
+    }
+    
+    .reviews__slides {
+        height: 100%;
+        margin-right: 20px;
+    }
+    
+    .reviews__comment {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    
+        width: 340px;
+        height: 100%;
+    }
+    
+    .reviews__img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+        width: 223px;
+        height: 244px;
+
+        & img {
+            width: 85%;
+        }
+    
+        margin-bottom: 24px; 
+    }
+    
+    .reviews__img-1 {
+        background-image: url("/assets/images/reviews/bg-2.png");
+        background-repeat: no-repeat;
+        background-position: top 15px left 17px;
+        background-size: 90%;
+    }
+    
+    .reviews__img-2 {
+        background-image: url("/assets/images/reviews/bg-1.png");
+        background-repeat: no-repeat;
+        background-position: top -2px left;
+    }
+    
+    .reviews__img-3 {
+        background-image: url("/assets/images/reviews/bg-3.png");
+        background-repeat: no-repeat;
+        background-position: top 5px  left -5px;
+    }
+    
+    .reviews__name {
+        font-size: $fs18;
+    }
+    
+    .reviews__discription {
+        margin-bottom: 8px;
+    
+        font-size: $fs14;
+        line-height: 24px;
+    }
+    
+    .reviews__show {
+        font-size: $fs14;
+    }
+    
+    .button__reviews {
+        margin-top: 32px;
+    }
+    
+    .reviews__button-right {
+        position: absolute;
+        top: 230px;
+        right: 0;
+    }
+
+    .reviews__button-left {
+        position: absolute;
+        top: 230px;
+        left: 0;
+    }
+
+    .button__slide-reviews {
+        position: static;
+
+        &-right {
+            position: static;
+    
+            transform: rotate(180deg);
+        }
+
+        box-shadow: 0px 0px 10px -0px rgba(0,0,0,.2);
+    }
 
 
 

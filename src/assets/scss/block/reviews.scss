@@ -1,0 +1,128 @@
+.reviews {
+    padding: 60px 0 85px;
+}
+
+.reviews__title {
+    text-align: center;
+    margin-bottom: 80px;
+
+    font-weight: 600;
+    font-size: $fs36;
+    line-height: 120%;
+}
+
+.reviews__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    height: 650px;
+}
+
+.reviews__slider {
+    display: flex;
+
+    width: 1020px;
+    height: 100%;
+
+    overflow: hidden;
+}
+
+.reviews__slides {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    height: 100%;
+
+    margin-right: 20px;
+}
+
+.reviews__comment {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 340px;
+    height: 100%;
+
+    &:nth-child(2) {
+        justify-content: flex-start;
+    }
+}
+
+.reviews__img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 240px;
+    height: 250px;
+
+    margin-bottom: 30px; 
+}
+
+.reviews__img-1 {
+    background-image: url("/assets/images/reviews/bg-2.png");
+    background-repeat: no-repeat;
+    background-position: top -2px left 10px;
+}
+
+.reviews__img-2 {
+    background-image: url("/assets/images/reviews/bg-1.png");
+    background-repeat: no-repeat;
+    background-position: top -2px left;
+}
+
+.reviews__img-3 {
+    background-image: url("/assets/images/reviews/bg-3.png");
+    background-repeat: no-repeat;
+    background-position: top 5px  left -5px;
+}
+
+.reviews__name {
+    margin-bottom: 14px;
+
+    text-align: center;
+    font-weight: 600;
+    font-size: $fs24;
+    line-height: 24px;
+
+    color: $textGrey;
+}
+
+.reviews__discription {
+    margin-bottom: 8px;
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+
+    text-align: center;
+
+    color: $textBlack;
+}
+
+.reviews__show {
+    font-style: normal;
+    font-weight: 600;
+    font-size: $fs16;
+    line-height: 24px;
+    text-align: center;
+    color: $accentCol;
+
+    cursor: pointer;
+}
+
+.button__reviews {
+    margin-top: 70px;
+}
+
+.reviews__button-left {
+    position: relative;
+}
+
+.reviews__button-right {
+    position: relative;
+}
