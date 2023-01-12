@@ -5,8 +5,6 @@
     padding: 48px 13px 42px 15px;
 }
 
-
-
 .card__mini {
     background: $firstBG;
     background-image: url("/assets/images/Background-card.png");
@@ -110,10 +108,6 @@
     height: 25px;
 
     margin-right: 8px;
-
-    &:nth-child(6) {
-
-    }
 }
 
 .card__title-addition {

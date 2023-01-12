@@ -199,6 +199,8 @@ nav {
   font-weight: 600;
   font-size: 16px;
   line-height: 20px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
   background: linear-gradient(180deg, #FFA96B -21.43%, #EE7A28 100%);
   border-radius: 10px;
   border: 0px;
@@ -790,6 +792,7 @@ location {
   height: 25px;
   margin-right: 8px;
 }
+
 .card__title-addition {
   font-weight: 600;
   font-size: 16px;
@@ -1215,10 +1218,11 @@ hr {
   .services__wrapper {
     gap: 25px;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(4, 204px);
+    grid-template-rows: repeat(4, 234px);
   }
   .services__item img {
     width: 100%;
+    height: 100%;
   }
   .services__item p {
     left: 12px;
@@ -1232,6 +1236,42 @@ hr {
   }
   .services__item:nth-child(5) p {
     width: 200px;
+  }
+  .price {
+    background-image: url("/assets/images/bg-line-card-rotade.png");
+    background-repeat: no-repeat;
+    background-size: 100% 95%;
+    background-position: 0 150px;
+    padding-bottom: 100px;
+  }
+  .price__title {
+    padding: 100px 0 80px;
+    font-weight: 600;
+    font-size: 30px;
+  }
+  .price__wrapper {
+    justify-content: center;
+    flex-wrap: wrap;
+    height: auto;
+  }
+  .card {
+    width: 420px;
+    height: 654px;
+    margin-bottom: 34px;
+    padding: 48px 22px 46px;
+  }
+  .card:last-child {
+    margin-bottom: 0px;
+  }
+  .card__mini {
+    margin-right: 34px;
+  }
+  .button-card {
+    width: 100%;
+    font-size: 16px;
+  }
+  .card__maxi {
+    height: 706px;
   }
   .nav__footer {
     width: 420px;
@@ -1687,6 +1727,117 @@ hr {
   }
   .services__item_11 p {
     width: 130px;
+  }
+  .price > .container {
+    width: 100%;
+  }
+  .price {
+    background-image: none;
+    padding-bottom: 60px;
+  }
+  .price__title {
+    padding: 60px 0 40px;
+    font-size: 24px;
+    line-height: 140%;
+  }
+  .price__wrapper {
+    display: flex;
+    justify-content: center;
+    height: auto;
+  }
+  .card {
+    width: 343px;
+    height: auto;
+    padding: 45px 11px 45px 12px;
+    margin-right: 0;
+  }
+  .card__mini,
+  .card__standart {
+    background-position: top -100px right -100px;
+  }
+  .card__maxi {
+    height: auto;
+    background-position: top -100px right -100px;
+  }
+  .card__title {
+    margin-left: 16px;
+    margin-bottom: 8px;
+  }
+  .card__price {
+    margin-left: 16px;
+    margin-bottom: 0px;
+    color: #333333;
+  }
+  .card__location {
+    margin-left: 16px;
+    font-size: 14px;
+  }
+  .card__wrapper {
+    margin-left: 16px;
+    margin-bottom: 32px;
+  }
+  .card__item {
+    margin-bottom: 16px;
+    font-size: 14px;
+  }
+  .card__item:last-child {
+    width: 230px;
+  }
+  .card__item:last-child::before {
+    content: " ";
+    top: 0px;
+  }
+  .card__addition {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 12px 0 32px;
+  }
+  .card__action {
+    height: 40px;
+    padding: 6px 40px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    background-color: #fff;
+    border: 1px solid #C2C2C2;
+    border-radius: 5px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 120%;
+    text-align: center;
+    cursor: pointer;
+  }
+  .card__action:nth-child(2) {
+    margin-right: 0;
+    width: 155px;
+  }
+  .card__action:last-child {
+    width: 100%;
+    padding: 6px 70px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+  }
+  .card__action_first {
+    width: 155px;
+    margin-right: 5px;
+  }
+  .button-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 48px;
+    color: #fff;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    background: linear-gradient(180deg, #FFA96B -21.43%, #EE7A28 100%);
+    border-radius: 10px;
+    border: 0px;
+  }
+  .button-card:hover {
+    background: linear-gradient(180deg, #FFA96B 58.75%, #EE7A28 173.44%);
   }
   footer {
     height: 524px;
