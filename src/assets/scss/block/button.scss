@@ -56,6 +56,26 @@
 
         &:hover {background: linear-gradient(180deg, #FFA96B 58.75%, #EE7A28 173.44%);}
     }
+
+    &-card {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        width: 100%;
+        height: 48px;
+
+        color: $white;
+        font-weight: 600;
+        font-size: $fs16;
+        line-height: 20px;
+
+        background: linear-gradient(180deg, #FFA96B -21.43%, #EE7A28 100%);
+        border-radius: 10px;
+        border: 0px;
+
+        &:hover {background: linear-gradient(180deg, #FFA96B 58.75%, #EE7A28 173.44%);}
+    }
 }
 
 .button__slide {
@@ -85,10 +105,22 @@
         transform: rotate(180deg);
     }
 
+   
+
     & svg {
         fill: $white;
+        stroke: $accentCol;
         width: 20px;
         height: 40px;
+    }
+
+    &:active {
+        background-color: $accentCol;
+         
+        & svg {
+            fill: $accentCol;
+            stroke: $white;
+        }
     }
 }
 
@@ -102,6 +134,7 @@
     right: 0;
 
     color: $accentCol;
+    stroke: $accentCol;
     font-size: $fs16;
 
     cursor: pointer;
@@ -133,3 +166,4 @@
         }
     }
 }
+
