@@ -164,11 +164,11 @@ nav {
   color: #fff;
   letter-spacing: 3px;
   font-weight: 600;
-  background: linear-gradient(180deg, #FFA96B -21.43%, #EE7A28 100%);
+  background: linear-gradient(180deg, #ffa96b -21.43%, #ee7a28 100%);
   border-radius: 10px;
 }
 .button-main:hover {
-  background: linear-gradient(180deg, #FFA96B 58.75%, #EE7A28 173.44%);
+  background: linear-gradient(180deg, #ffa96b 58.75%, #ee7a28 173.44%);
 }
 .button-location {
   margin: 0 auto;
@@ -179,11 +179,11 @@ nav {
   color: #fff;
   letter-spacing: 3px;
   font-weight: 600;
-  background: linear-gradient(180deg, #FFA96B -21.43%, #EE7A28 100%);
+  background: linear-gradient(180deg, #ffa96b -21.43%, #ee7a28 100%);
   border-radius: 10px;
 }
 .button-location:hover {
-  background: linear-gradient(180deg, #FFA96B 58.75%, #EE7A28 173.44%);
+  background: linear-gradient(180deg, #ffa96b 58.75%, #ee7a28 173.44%);
 }
 .button-card {
   display: flex;
@@ -197,12 +197,12 @@ nav {
   line-height: 20px;
   letter-spacing: 3px;
   text-transform: uppercase;
-  background: linear-gradient(180deg, #FFA96B -21.43%, #EE7A28 100%);
+  background: linear-gradient(180deg, #ffa96b -21.43%, #ee7a28 100%);
   border-radius: 10px;
   border: 0px;
 }
 .button-card:hover {
-  background: linear-gradient(180deg, #FFA96B 58.75%, #EE7A28 173.44%);
+  background: linear-gradient(180deg, #ffa96b 58.75%, #ee7a28 173.44%);
 }
 .button-form {
   display: flex;
@@ -216,12 +216,12 @@ nav {
   line-height: 20px;
   letter-spacing: 3px;
   text-transform: uppercase;
-  background: linear-gradient(180deg, #FFA96B -21.43%, #EE7A28 100%);
+  background: linear-gradient(180deg, #ffa96b -21.43%, #ee7a28 100%);
   border-radius: 10px;
   border: 0px;
 }
 .button-form:hover {
-  background: linear-gradient(180deg, #FFA96B 58.75%, #EE7A28 173.44%);
+  background: linear-gradient(180deg, #ffa96b 58.75%, #ee7a28 173.44%);
 }
 
 .button__slide {
@@ -315,13 +315,13 @@ nav {
   line-height: 20px;
   letter-spacing: 3px;
   text-transform: uppercase;
-  background: linear-gradient(180deg, #FFA96B -21.43%, #EE7A28 100%);
+  background: linear-gradient(180deg, #ffa96b -21.43%, #ee7a28 100%);
   border-radius: 10px;
   border: 0px;
   cursor: pointer;
 }
 .button__reviews:hover {
-  background: linear-gradient(180deg, #FFA96B 58.75%, #EE7A28 173.44%);
+  background: linear-gradient(180deg, #ffa96b 58.75%, #ee7a28 173.44%);
 }
 .button__reviews-mobile {
   display: none;
@@ -1261,11 +1261,11 @@ hr {
     color: #fff;
     letter-spacing: 3px;
     font-weight: 600;
-    background: linear-gradient(180deg, #FFA96B -21.43%, #EE7A28 100%);
+    background: linear-gradient(180deg, #ffa96b -21.43%, #ee7a28 100%);
     border-radius: 10px;
   }
   .button-main:hover {
-    background: linear-gradient(180deg, #FFA96B 58.75%, #EE7A28 173.44%);
+    background: linear-gradient(180deg, #ffa96b 58.75%, #ee7a28 173.44%);
   }
   .button-location {
     width: 336px;
@@ -1275,11 +1275,11 @@ hr {
     color: #fff;
     letter-spacing: 3px;
     font-weight: 600;
-    background: linear-gradient(180deg, #FFA96B -21.43%, #EE7A28 100%);
+    background: linear-gradient(180deg, #ffa96b -21.43%, #ee7a28 100%);
     border-radius: 10px;
   }
   .button-location:hover {
-    background: linear-gradient(180deg, #FFA96B 58.75%, #EE7A28 173.44%);
+    background: linear-gradient(180deg, #ffa96b 58.75%, #ee7a28 173.44%);
   }
   .main {
     position: relative;
@@ -1599,7 +1599,7 @@ hr {
   }
   .form__map iframe {
     width: 350px;
-    border: 5px solid #F2F4F4;
+    border: 5px solid #f2f4f4;
     border-right: none;
     filter: drop-shadow(0px 2px 3px rgba(121, 121, 121, 0.2));
     border-radius: 25.8573px 0px 0px 25.8573px;
@@ -2146,7 +2146,7 @@ hr {
     margin-right: 5px;
     margin-bottom: 5px;
     background-color: #fff;
-    border: 1px solid #C2C2C2;
+    border: 1px solid #c2c2c2;
     border-radius: 5px;
     font-weight: 500;
     font-size: 12px;
@@ -2180,12 +2180,12 @@ hr {
     line-height: 20px;
     letter-spacing: 3px;
     text-transform: uppercase;
-    background: linear-gradient(180deg, #FFA96B -21.43%, #EE7A28 100%);
+    background: linear-gradient(180deg, #ffa96b -21.43%, #ee7a28 100%);
     border-radius: 10px;
     border: 0px;
   }
   .button-card:hover {
-    background: linear-gradient(180deg, #FFA96B 58.75%, #EE7A28 173.44%);
+    background: linear-gradient(180deg, #ffa96b 58.75%, #ee7a28 173.44%);
   }
   .reviews {
     padding: 60px 0 60px;
@@ -2292,7 +2292,7 @@ hr {
   }
   .form__map iframe {
     width: 340px;
-    border: 5px solid #F2F4F4;
+    border: 5px solid #f2f4f4;
     border-radius: 15px;
   }
   .img__map {

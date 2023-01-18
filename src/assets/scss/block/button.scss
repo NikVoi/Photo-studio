@@ -15,10 +15,10 @@
     cursor: pointer;
 
     &:hover {
-        transition: .3s;
+        transition: 0.3s;
 
         background-color: $accentCol;
-        color: $white
+        color: $white;
     }
 
     &-main {
@@ -26,16 +26,18 @@
         height: 64px;
 
         padding: 22px 0;
-        
+
         font-size: $fs16;
         color: $white;
         letter-spacing: 3px;
         font-weight: 600;
-    
-        background: linear-gradient(180deg, #FFA96B -21.43%, #EE7A28 100%);
+
+        background: linear-gradient(180deg, #ffa96b -21.43%, #ee7a28 100%);
         border-radius: 10px;
 
-        &:hover {background: linear-gradient(180deg, #FFA96B 58.75%, #EE7A28 173.44%);}
+        &:hover {
+            background: linear-gradient(180deg, #ffa96b 58.75%, #ee7a28 173.44%);
+        }
     }
 
     &-location {
@@ -45,16 +47,18 @@
         height: 48px;
 
         padding: 15px 0;
-        
+
         font-size: $fs16;
         color: $white;
         letter-spacing: 3px;
         font-weight: 600;
-    
-        background: linear-gradient(180deg, #FFA96B -21.43%, #EE7A28 100%);
+
+        background: linear-gradient(180deg, #ffa96b -21.43%, #ee7a28 100%);
         border-radius: 10px;
 
-        &:hover {background: linear-gradient(180deg, #FFA96B 58.75%, #EE7A28 173.44%);}
+        &:hover {
+            background: linear-gradient(180deg, #ffa96b 58.75%, #ee7a28 173.44%);
+        }
     }
 
     &-card {
@@ -72,11 +76,13 @@
         letter-spacing: 3px;
         text-transform: uppercase;
 
-        background: linear-gradient(180deg, #FFA96B -21.43%, #EE7A28 100%);
+        background: linear-gradient(180deg, #ffa96b -21.43%, #ee7a28 100%);
         border-radius: 10px;
         border: 0px;
 
-        &:hover {background: linear-gradient(180deg, #FFA96B 58.75%, #EE7A28 173.44%);}
+        &:hover {
+            background: linear-gradient(180deg, #ffa96b 58.75%, #ee7a28 173.44%);
+        }
     }
 
     &-form {
@@ -94,11 +100,13 @@
         letter-spacing: 3px;
         text-transform: uppercase;
 
-        background: linear-gradient(180deg, #FFA96B -21.43%, #EE7A28 100%);
+        background: linear-gradient(180deg, #ffa96b -21.43%, #ee7a28 100%);
         border-radius: 10px;
         border: 0px;
 
-        &:hover {background: linear-gradient(180deg, #FFA96B 58.75%, #EE7A28 173.44%);}
+        &:hover {
+            background: linear-gradient(180deg, #ffa96b 58.75%, #ee7a28 173.44%);
+        }
     }
 }
 
@@ -138,7 +146,7 @@
 
     &:active {
         background-color: $accentCol;
-         
+
         & svg {
             fill: $accentCol;
             stroke: $white;
@@ -153,14 +161,12 @@
 
         &-right {
             position: static;
-    
+
             transform: rotate(180deg);
         }
 
-        box-shadow: 0px 0px 10px -0px rgba(0,0,0,.2);
+        box-shadow: 0px 0px 10px -0px rgba(0, 0, 0, 0.2);
     }
-
-   
 }
 
 .button__open {
@@ -198,7 +204,7 @@
             transition: 1s;
             margin-left: 16px;
             transform: rotate(90deg);
-    
+
             width: 10px;
             height: 21px;
             fill: $firstBG;
@@ -221,12 +227,16 @@
     letter-spacing: 3px;
     text-transform: uppercase;
 
-    background: linear-gradient(180deg, #FFA96B -21.43%, #EE7A28 100%);
+    background: linear-gradient(180deg, #ffa96b -21.43%, #ee7a28 100%);
     border-radius: 10px;
     border: 0px;
 
     cursor: pointer;
 
-    &:hover {background: linear-gradient(180deg, #FFA96B 58.75%, #EE7A28 173.44%);}
-    &-mobile {display: none;}
+    &:hover {
+        background: linear-gradient(180deg, #ffa96b 58.75%, #ee7a28 173.44%);
+    }
+    &-mobile {
+        display: none;
+    }
 }

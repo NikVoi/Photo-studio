@@ -17,7 +17,6 @@
 
 @import "../scss/block/footer.scss";
 
-
 body {
     background-color: $white;
     font-family: "Montserrat";
@@ -35,8 +34,8 @@ body {
 a {
     color: $textBlack;
 
-    &:hover{
-        transition: .3s;
+    &:hover {
+        transition: 0.3s;
         color: $accentCol;
     }
 }
@@ -46,15 +45,13 @@ hr {
     width: 100%;
     height: 1px;
 
-    border-top: 1px solid $gray; 
+    border-top: 1px solid $gray;
 }
 
 .menu {
-    position: fixed;  
+    position: fixed;
 
-    left: 100%
+    left: 100%;
 }
-
-
 
 @import "../scss/block/media.scss";
