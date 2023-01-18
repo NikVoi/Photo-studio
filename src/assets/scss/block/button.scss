@@ -108,6 +108,30 @@
             background: linear-gradient(180deg, #ffa96b 58.75%, #ee7a28 173.44%);
         }
     }
+
+    &-gift {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        width: 88%;
+        height: 48px;
+
+        color: $white;
+        font-weight: 600;
+        font-size: $fs16;
+        line-height: 20px;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+
+        background: linear-gradient(180deg, #ffa96b -21.43%, #ee7a28 100%);
+        border-radius: 10px;
+        border: 0px;
+
+        &:hover {
+            background: linear-gradient(180deg, #ffa96b 58.75%, #ee7a28 173.44%);
+        }
+    }
 }
 
 .button__slide {

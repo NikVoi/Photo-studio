@@ -1,0 +1,119 @@
+.gift {
+    position: relative;
+    padding: 82px 0 92px;
+}
+
+.gift__title {
+    margin-bottom: 80px;
+
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 120%;
+    color: $textBlack;
+    text-align: center;
+}
+
+.gift__bg-line {
+    position: absolute;
+    right: -40px;
+    bottom: 0px;
+
+    height: 580px;
+}
+.gift__wrapper {
+    display: flex;
+    justify-content: center;
+
+    padding: 0 0 80px 0;
+
+    background-color: #F2F4F4;
+    border-radius: 25px;
+}
+.git__top {
+    margin-top: 110px;
+    margin-bottom: 12px;
+
+    font-weight: 500;
+    font-size: $fs14;
+    line-height: 120%;
+    letter-spacing: 1px;
+    color: #C1C1C1;
+}
+.gift__big {
+    width: 500px;
+    
+    margin-bottom: 52px;
+
+    font-weight: 600;
+    font-size: $fs48;
+    line-height: 140%;
+    letter-spacing: 1px;
+    color: #4A4A4A;
+}
+.gift__block {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+   
+}
+.gidt__block-item {
+    position: relative;
+    padding-left: 30px;
+
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 140%;
+    color: #4A4A4A;
+
+    margin-bottom: 25px;
+
+    &:last-child{
+        margin-bottom: 0px;
+    }
+
+    &::before {
+        content: " ";
+        position: absolute;
+        top: 3px;
+        left: 0;
+
+        width: 16px;
+        height: 16px;
+
+        background-image: url("/assets/images/done.svg");
+        background-repeat: no-repeat;
+        background-size: 16px 16px;
+    }
+}
+.gift__img {
+    position: relative;
+
+    width: 480px;
+    height: 480px;
+
+    & img {
+        width: 100%;
+        height: 100%;
+    }
+}
+.gift__text {
+    margin: 0 auto;
+
+    min-width: 300px;
+    max-width: 340px;
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 140%;
+    text-align: center;
+    color: #333333;
+}
+.button-gift {
+    margin: 0 auto;
+    width: 340px;
+
+    margin-top: 24px;
+
+    position: relative;
+}
