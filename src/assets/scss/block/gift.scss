@@ -1,6 +1,7 @@
 .gift {
     position: relative;
     padding: 82px 0 92px;
+    overflow: hidden;
 }
 
 .gift__title {
@@ -54,8 +55,6 @@
     position: relative;
     display: flex;
     flex-direction: column;
-
-   
 }
 .gidt__block-item {
     position: relative;
@@ -81,7 +80,7 @@
         width: 16px;
         height: 16px;
 
-        background-image: url("/assets/images/done.svg");
+        background-image: url("../.././assets/images/done.svg");
         background-repeat: no-repeat;
         background-size: 16px 16px;
     }

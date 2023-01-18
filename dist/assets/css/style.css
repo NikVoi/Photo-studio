@@ -870,6 +870,7 @@ location {
     background-repeat: no-repeat;
     background-size: 264px;
     background-position: top right;
+    border-radius: 16px;
 }
 
 .card__standart {
@@ -878,6 +879,7 @@ location {
     background-repeat: no-repeat;
     background-size: 264px;
     background-position: top right;
+    border-radius: 16px;
 }
 
 .card__maxi {
@@ -887,6 +889,7 @@ location {
     background-repeat: no-repeat;
     background-size: 264px;
     background-position: top right;
+    border-radius: 16px;
 }
 
 .card__title {
@@ -2979,10 +2982,6 @@ hr {
         padding: 60px 0 0;
     }
 
-    .gift > .container {
-        width: calc(100% - 16px);
-    }
-
     .gift__title {
         margin-bottom: 40px;
         font-size: 24px;
@@ -2991,9 +2990,9 @@ hr {
 
     .gift__bg-line {
         position: absolute;
-        right: -40px;
+        right: 0px;
         bottom: 0px;
-        height: 580px;
+        height: 300px;
     }
 
     .gift__wrapper {
@@ -3005,47 +3004,32 @@ hr {
         align-items: center;
         -ms-flex-direction: column;
         flex-direction: column;
-        width: 100%;
+        text-align: center;
+        width: 340px;
+        margin: 0 auto;
         padding: 40px 0 50px 0;
         background: #F9F4EE;
     }
 
     .git__top {
-        margin-top: 110px;
+        margin-top: 0px;
         margin-bottom: 12px;
-        font-weight: 500;
-        font-size: 14px;
-        line-height: 120%;
-        letter-spacing: 1px;
-        color: #C1C1C1;
+        font-size: 12px;
     }
 
     .gift__big {
-        width: 500px;
-        margin-bottom: 52px;
-        font-weight: 600;
-        font-size: 48px;
-        line-height: 140%;
-        letter-spacing: 1px;
-        color: #4A4A4A;
-    }
-
-    .gift__block {
-        position: relative;
-        display: -ms-flexbox;
-        display: flex;
-        -ms-flex-direction: column;
-        flex-direction: column;
+        width: 250px;
+        margin-bottom: 48px;
+        font-size: 24px;
     }
 
     .gidt__block-item {
-        position: relative;
-        padding-left: 30px;
-        font-weight: 600;
-        font-size: 16px;
+        padding-left: 0px;
+        padding-top: 32px;
+        font-size: 14px;
         line-height: 140%;
         color: #4A4A4A;
-        margin-bottom: 25px;
+        margin-bottom: 20px;
     }
 
     .gidt__block-item:last-child {
@@ -3055,19 +3039,20 @@ hr {
     .gidt__block-item::before {
         content: " ";
         position: absolute;
-        top: 3px;
-        left: 0;
-        width: 16px;
-        height: 16px;
+        top: -8px;
+        left: 112px;
+        width: 24px;
+        height: 24px;
         background-image: url("/assets/images/done.svg");
         background-repeat: no-repeat;
-        background-size: 16px 16px;
+        background-size: 24px 24px;
     }
 
     .gift__img {
         position: relative;
-        width: 480px;
-        height: 480px;
+        width: 260px;
+        height: 260px;
+        margin: 0 auto;
     }
 
     .gift__img img {
@@ -3077,18 +3062,16 @@ hr {
 
     .gift__text {
         margin: 0 auto;
-        min-width: 300px;
-        max-width: 340px;
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 140%;
-        text-align: center;
-        color: #333333;
+        width: 280px;
+        font-size: 14px;
     }
 
     .button-gift {
+        display: -ms-flexbox;
+        display: flex;
         margin: 0 auto;
-        width: 340px;
+        width: 320px;
+        height: 56px;
         margin-top: 24px;
         position: relative;
     }
