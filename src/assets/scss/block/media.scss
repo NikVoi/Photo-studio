@@ -503,6 +503,48 @@
         }
     }
 
+    
+    .form {
+        padding: 120px 0 130px;
+    }
+    
+    .form__map {
+        padding: 26px 0 0 0;
+    
+        & iframe {
+            width: 350px;
+
+            border: 5px solid #F2F4F4;
+            border-right: none;
+            filter: drop-shadow(0px 2px 3px rgba(121, 121, 121, 0.2));
+            border-radius: 25.8573px 0px 0px 25.8573px;
+        }
+    }
+    
+    .img__map {
+        position: absolute;
+    
+        width: 150px;
+    
+        top: 120px;
+        left: 100px;
+        z-index: 3;
+    }
+    
+    .form__main {
+        width: 480px;
+    
+        padding: 73px 51px;
+    }
+
+    .button {
+        width: 100%;
+    }
+    
+    
+    .form__input {width: 380px;}
+
+
 
 
 
@@ -1365,6 +1407,78 @@
         box-shadow: 0px 0px 10px -0px rgba(0,0,0,.2);
     }
 
+    .form {
+        padding: 80px 0 120px;
+    }
+    
+    .form__wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    .form__map {
+        padding: 0 0 0 0;
+    
+        & iframe {
+            width: 340px;
+
+            border: 5px solid #F2F4F4;
+            border-radius: 15px;
+        }
+    }
+    
+    .img__map {
+        position: absolute;
+    
+        width: 150px;
+    
+        top: 120px;
+        left: 130px;
+        z-index: 3;
+    }
+    
+    .form__main {
+        width: 320px;
+        height: 540px;
+    
+        position: relative;
+        top: -30px;
+
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    
+        padding: 50px 20px;
+    
+        background-size: 150px, 250px;
+        background-position: top  right -60px, bottom -25px left -65px;
+    }
+    
+    .form__title {
+        margin-bottom: 24px;
+    
+        font-size: $fs22;
+    }
+    
+    label {
+        padding: 12px 0 8px;
+
+        font-size: $fs14;
+    }
+    
+    .form__input {width: 280px; }
+    
+    .button {
+        display: flex;
+
+        width: 100%;
+
+        margin-bottom: 16px;
+        margin-top: 32px;
+    }
+    
 
 
 

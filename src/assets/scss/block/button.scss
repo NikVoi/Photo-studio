@@ -78,6 +78,28 @@
 
         &:hover {background: linear-gradient(180deg, #FFA96B 58.75%, #EE7A28 173.44%);}
     }
+
+    &-form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        width: 88%;
+        height: 48px;
+
+        color: $white;
+        font-weight: 600;
+        font-size: $fs16;
+        line-height: 20px;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+
+        background: linear-gradient(180deg, #FFA96B -21.43%, #EE7A28 100%);
+        border-radius: 10px;
+        border: 0px;
+
+        &:hover {background: linear-gradient(180deg, #FFA96B 58.75%, #EE7A28 173.44%);}
+    }
 }
 
 .button__slide {
@@ -137,6 +159,8 @@
 
         box-shadow: 0px 0px 10px -0px rgba(0,0,0,.2);
     }
+
+   
 }
 
 .button__open {
