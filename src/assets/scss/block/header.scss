@@ -15,6 +15,9 @@
         width: 108px;
         height: 35px;
     }
+    
+    animation: .5s ease-out 0s  puff-in-center;
+
 }
 
 .header__mobile {display: none;}
@@ -26,6 +29,9 @@
     align-items: center;
 
     margin-right: $fs24;
+
+    animation: .5s ease-out 0s  puff-in-center;
+
 }
 
 .header__tel{
@@ -35,6 +41,9 @@
     font-size: $fs14;
     font-weight: 600;
     color: $textGrey;
+
+    animation: .5s ease-out 0s  puff-in-center;
+
 
     & svg {
         display: none;

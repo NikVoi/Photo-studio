@@ -84,6 +84,8 @@ h1, h2, h3, h4, h5, h6 {
 .header__logo {
     width: 108px;
     height: 35px;
+    -webkit-animation: 0.5s ease-out 0s puff-in-center;
+    animation: 0.5s ease-out 0s puff-in-center;
 }
 
 .header__logo .header__logo-img {
@@ -106,6 +108,8 @@ h1, h2, h3, h4, h5, h6 {
     -ms-flex-align: center;
     align-items: center;
     margin-right: 24px;
+    -webkit-animation: 0.5s ease-out 0s puff-in-center;
+    animation: 0.5s ease-out 0s puff-in-center;
 }
 
 .header__tel {
@@ -116,6 +120,8 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 14px;
     font-weight: 600;
     color: #4A4A4A;
+    -webkit-animation: 0.5s ease-out 0s puff-in-center;
+    animation: 0.5s ease-out 0s puff-in-center;
 }
 
 .header__tel svg {
@@ -137,6 +143,8 @@ nav {
     margin-right: 32px;
     color: #4A4A4A;
     font-weight: 500;
+    -webkit-animation: 0.5s ease-out 0s puff-in-center;
+    animation: 0.5s ease-out 0s puff-in-center;
 }
 
 .nav__item-footer {
@@ -499,6 +507,30 @@ location {
 .location__buttons {
     position: relative;
     height: inherit;
+}
+
+@-webkit-keyframes slide-left {
+    0% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+
+    100% {
+        -webkit-transform: translateX(-100px);
+        transform: translateX(-100px);
+    }
+}
+
+@keyframes slide-left {
+    0% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+
+    100% {
+        -webkit-transform: translateX(-100px);
+        transform: translateX(-100px);
+    }
 }
 
 .decoration {
@@ -948,7 +980,7 @@ location {
     left: 0;
     width: 18px;
     height: 25px;
-    background-image: url("./assets/images/check-circle.svg");
+    background-image: url("../.././assets/images/check-circle.svg");
     background-repeat: no-repeat;
     background-size: 18px 25px;
 }
@@ -1177,6 +1209,13 @@ location {
     justify-content: center;
 }
 
+.form__wrapper-popUp {
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
 .form__map {
     padding: 26px 0 0 0;
 }
@@ -1213,6 +1252,12 @@ location {
     background-size: 200px, 332px;
     background-position: top right -50px, bottom -65px left -55px;
     border-radius: 25px;
+}
+
+.form__main-popUp {
+    background: none;
+    height: auto;
+    padding: 0 30px;
 }
 
 .form__main label {
@@ -1293,6 +1338,7 @@ input::placeholder {
 .gift {
     position: relative;
     padding: 82px 0 92px;
+    overflow: hidden;
 }
 
 .gift__title {
@@ -1370,7 +1416,7 @@ input::placeholder {
     left: 0;
     width: 16px;
     height: 16px;
-    background-image: url("/assets/images/done.svg");
+    background-image: url("../.././assets/images/done.svg");
     background-repeat: no-repeat;
     background-size: 16px 16px;
 }
@@ -1402,6 +1448,283 @@ input::placeholder {
     width: 340px;
     margin-top: 24px;
     position: relative;
+}
+
+.popUp {
+    display: none;
+    position: absolute;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.popUp.active {
+    display: none;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background: rgba(33, 33, 33, 0.5);
+}
+
+.popUp__form {
+    display: none;
+    position: relative;
+    width: 1000px;
+    height: 560px;
+    background: #fff;
+    padding: 60px 40px 60px 34px;
+    border-radius: 15px;
+}
+
+.popUp__close {
+    position: absolute;
+    top: -30px;
+    right: 0;
+    z-index: 101;
+    width: 21px;
+    height: 21px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.popUp__close:hover {
+    transition: 0.4s;
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
+.close-pop {
+    width: 100%;
+    height: 100%;
+}
+
+.popUp__gratitude {
+    display: none;
+    position: relative;
+    width: 620px;
+    height: 330px;
+    padding: 88px 0;
+    background: #fff;
+    border-radius: 15px;
+    background-image: url("../.././assets/images/Background-card.png"), url("../.././assets/images/Background-gratitude.png");
+    background-repeat: no-repeat;
+    background-position: top right, bottom left;
+}
+
+.popUp__gratitude.active {
+    display: block;
+}
+
+.gratitude__title {
+    margin-bottom: 24px;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 120%;
+    text-align: center;
+    color: #4A4A4A;
+}
+
+.gratitude__text {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    color: #121621;
+    opacity: 0.4;
+    text-align: center;
+}
+
+.popUp__galary {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+}
+
+.popUp__slider {
+    position: relative;
+    width: 500px;
+    height: 500px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.popUp__slider-wrapper {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    width: 500px;
+    height: 550px;
+}
+
+.popUp__slider-item {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+.popUp__slider-item img {
+    width: 500px;
+    height: 500px;
+    margin-bottom: 16px;
+}
+
+.popUp__slider-text {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #333333;
+}
+
+.popUp__buttons {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    position: absolute;
+    width: 1000px;
+    height: 73px;
+}
+
+.popUp__buttons .button__slide {
+    position: relative;
+    left: 0;
+    top: 0;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+}
+
+.popUp__buttons .button__slide-right {
+    right: 0;
+}
+
+@-webkit-keyframes scale-in-hor-center {
+    0% {
+        -webkit-transform: scaleX(0);
+        transform: scaleX(0);
+        opacity: 1;
+    }
+
+    100% {
+        -webkit-transform: scaleX(1);
+        transform: scaleX(1);
+        opacity: 1;
+    }
+}
+
+@keyframes scale-in-hor-center {
+    0% {
+        -webkit-transform: scaleX(0);
+        transform: scaleX(0);
+        opacity: 1;
+    }
+
+    100% {
+        -webkit-transform: scaleX(1);
+        transform: scaleX(1);
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes slide-in-fwd-center {
+    0% {
+        -webkit-transform: translateZ(-1400px);
+        transform: translateZ(-1400px);
+        opacity: 0;
+    }
+
+    100% {
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slide-in-fwd-center {
+    0% {
+        -webkit-transform: translateZ(-1400px);
+        transform: translateZ(-1400px);
+        opacity: 0;
+    }
+
+    100% {
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0);
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fade-in-fwd {
+    0% {
+        -webkit-transform: translateZ(-80px);
+        transform: translateZ(-80px);
+        opacity: 0;
+    }
+
+    100% {
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fade-in-fwd {
+    0% {
+        -webkit-transform: translateZ(-80px);
+        transform: translateZ(-80px);
+        opacity: 0;
+    }
+
+    100% {
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0);
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes puff-in-center {
+    0% {
+        -webkit-transform: scale(2);
+        transform: scale(2);
+        -webkit-filter: blur(4px);
+        filter: blur(4px);
+        opacity: 0;
+    }
+
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-filter: blur(0px);
+        filter: blur(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes puff-in-center {
+    0% {
+        -webkit-transform: scale(2);
+        transform: scale(2);
+        -webkit-filter: blur(4px);
+        filter: blur(4px);
+        opacity: 0;
+    }
+
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-filter: blur(0px);
+        filter: blur(0px);
+        opacity: 1;
+    }
 }
 
 footer {

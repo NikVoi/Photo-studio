@@ -25,6 +25,14 @@
     width: 1020px;
     height: 100%;
 
+    &-wrapper{
+        display: flex;
+        
+        position: relative;
+        left: 0;
+
+    }
+
     overflow: hidden;
 }
 
@@ -32,6 +40,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    position: relative;
+
+    transition: .3s;
 
     height: 100%;
 

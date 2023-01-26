@@ -1,6 +1,6 @@
 .popUp {
     display: none;
-    position: absolute;
+    position: fixed;
     z-index: 100;
 
     top: 0;
@@ -10,7 +10,7 @@
     height: 100%;
 
     &.active {
-        display: none;
+        display: flex;
         justify-content: center;
         align-items: center;
 
@@ -30,6 +30,10 @@
     padding: 60px 40px 60px 34px;
 
     border-radius: 15px;
+
+    &.active {
+        display: block;
+    }
 }
 
 .popUp__close {
@@ -44,6 +48,7 @@
 
     cursor: pointer;
     transition: .4s;
+
     &:hover {
         transition: .4s;
         transform: rotate(90deg);
@@ -96,7 +101,7 @@
 }
 
 .popUp__galary {
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
     position: relative;
@@ -105,6 +110,10 @@
     height: 100%;
 
     background-color: $white;
+
+    &.active {
+        display: flex;
+    }
 }
 
 .popUp__slider {
@@ -167,4 +176,30 @@
     & .button__slide-right {
         right: 0;
     }
+}
+
+
+.popUp__price {
+    display: none;
+    position: relative;
+
+    background:$white;
+    padding: 42px 48px;
+    border-radius: 15px;
+    
+    &.active {
+        display: flex;
+    }
+
+}
+
+.popUp__title {
+    width: 590px;
+    margin-bottom: 20px;
+
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 120%;
+    text-align: center;
+    color: #333333;
 }

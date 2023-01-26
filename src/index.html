@@ -11,17 +11,17 @@ title: Photo studio | Home
     <div class="menu__item"><a href="#"> Контакты </a></div>
 </section>
 
-<div class="popUp active">
+<div class="popUp">
     
 
-    <div class="popUp__form active">
+    <div class="popUp__form">
         <div class="popUp__close">
             <svg class="close-pop">
                 <use xlink:href="#close"></use>
             </svg>
         </div>
 
-        <div class="form__wrapper form__wrapper-popUp">
+        <div class="form__wrapper form__wrapper-popUp ">
             <div class="form__picter">
                 <img src="./assets/images/picter-form.png" alt="">
             </div>
@@ -43,7 +43,7 @@ title: Photo studio | Home
                     <input type="tel" class="form__input" placeholder="Введите ваше Телефон" />
                 </div>
 
-                <div class="button button-form">Отправить</div>
+                <div class="button button-form form__gratitude">Отправить</div>
 
                 <div class="form__discription">
                     Нажимая кнопку «Отправить», вы даете согласие на обработку
@@ -73,12 +73,12 @@ title: Photo studio | Home
     <div class="popUp__galary">
         
         <div class="popUp__buttons">
-            <div class="button__slide" id="swiper-button-location-prev">
+            <div class="button__slide">
                 <svg class="arrow">
                     <use xlink:href="#arrow"></use>
                 </svg>
             </div>
-            <div class="button__slide button__slide-right" id="swiper-button-location-next">
+            <div class="button__slide button__slide-right">
                 <svg class="arrow arrow-right">
                     <use xlink:href="#arrow"></use>
                 </svg>
@@ -107,6 +107,25 @@ title: Photo studio | Home
         </div>
     </div>
 
+    <div class="popUp__price">
+        <div class="popUp__close">
+            <svg class="close-pop">
+                <use xlink:href="#close"></use>
+            </svg>
+        </div>
+        
+        <form action="" class="form__main form__main-popUp">
+            
+            <div class="popUp__title">Дополнительная ретушь фото</div>
+            
+            <div class="form__inputs">
+                <label for="">Количество</label>
+                <input type="number" class="form__input" id="pricePhoto" placeholder="Введите количество фото для ретуши" />
+            </div>
+        
+            <div class="button button-form button-save">Сохранить</div>
+        </form>
+    </div>
 </div>
 
 <section class="main">
@@ -125,7 +144,7 @@ title: Photo studio | Home
                 вы останетесь довольны и еще не раз захотите возвращаться к нам.
             </p>
         </div>
-        <div class="button button-main">Получить консультацию</div>
+        <div class="button button-main from-back-call">Получить консультацию</div>
     </div>
 </section>
 
@@ -185,26 +204,28 @@ title: Photo studio | Home
             </div>
         </div>
 
-        <div class="location__wrapper ">
-            <div class="location__item">
-                <img src="./assets/images/location/1.png" alt="" />
-                <span class="location__name">название локации</span>
-            </div>
-            <div class="location__item">
-                <img src="./assets/images/location/2.png" alt="" />
-                <span class="location__name">название локации</span>
-            </div>
-            <div class="location__item">
-                <img src="./assets/images/location/3.png" alt="" />
-                <span class="location__name">название локации</span>
-            </div>
-            <div class="location__item">
-                <img src="./assets/images/location/1.png" alt="" />
-                <span class="location__name">название локации</span>
-            </div>
-            <div class="location__item">
-                <img src="./assets/images/location/2.png" alt="" />
-                <span class="location__name">название локации</span>
+        <div class="location__wrapper">
+            <div class="location__nav">
+                <div class="location__item">
+                    <img src="./assets/images/location/1.png" alt="" />
+                    <span class="location__name">название локации</span>
+                </div>
+                <div class="location__item">
+                    <img src="./assets/images/location/2.png" alt="" />
+                    <span class="location__name">название локации</span>
+                </div>
+                <div class="location__item">
+                    <img src="./assets/images/location/3.png" alt="" />
+                    <span class="location__name">название локации</span>
+                </div>
+                <div class="location__item">
+                    <img src="./assets/images/location/1.png" alt="" />
+                    <span class="location__name">название локации</span>
+                </div>
+                <div class="location__item">
+                    <img src="./assets/images/location/2.png" alt="" />
+                    <span class="location__name">название локации</span>
+                </div>
             </div>
         </div>
 
@@ -355,7 +376,7 @@ title: Photo studio | Home
             <br />
             Мечтаете показать всему миру вашу историю создания любви или хранить<span class="about-shadow">... <br />
             </span>
-            снимки в памятном альбоме, то это фотоссесия отлично подойдет вам.
+            снимки в памятном альбоме<span class="about-shadow-prev">... <br /></span>, то это фотоссесия отлично подойдет вам.
             Расскажите вашу историю с любимым человеком в фотографиях в необычном
             месте.<br />
             <br />
@@ -426,7 +447,7 @@ title: Photo studio | Home
         <div class="price__wrapper">
             <div class="card card__mini">
                 <div class="card__title">MINI</div>
-                <div class="card__price">2500 ₽</div>
+                <div class="card__price"><span id="priceNumber">2500</span> ₽</div>
                 <div class="card__location">/ 1 локация</div>
 
                 <div class="card__wrapper">
@@ -440,10 +461,10 @@ title: Photo studio | Home
                 <div class="card__title-addition">Дополнительные услуги</div>
 
                 <div class="card__addition">
-                    <div class="card__action card__action_first">
+                    <div class="card__action card__action_first card__action-click">
                         Помощь в позировании
                     </div>
-                    <div class="card__action">Визажист + 2000 ₽</div>
+                    <div class="card__action card__action-click makeup-artist">Визажист + 2000 ₽</div>
                     <div class="card__action card__action-col">
                         Дополнительная ретушь фото — <span class="card__col">1</span> шт. /
                         250 ₽
@@ -454,7 +475,7 @@ title: Photo studio | Home
             </div>
             <div class="card card__standart">
                 <div class="card__title">STANDART</div>
-                <div class="card__price">5000 ₽</div>
+                <div class="card__price"><span id="priceNumber">5000</span> ₽</div>
                 <div class="card__location">/ 2 локация</div>
 
                 <div class="card__wrapper">
@@ -468,10 +489,10 @@ title: Photo studio | Home
                 <div class="card__title-addition">Дополнительные услуги</div>
 
                 <div class="card__addition">
-                    <div class="card__action card__action_first">
+                    <div class="card__action card__action_first card__action-click">
                         Помощь в позировании
                     </div>
-                    <div class="card__action">Визажист + 2000 ₽</div>
+                    <div class="card__action card__action-click makeup-artist">Визажист + 2000 ₽</div>
                     <div class="card__action card__action-col">
                         Дополнительная ретушь фото — <span class="card__col">1</span> шт. /
                         250 ₽
@@ -482,7 +503,7 @@ title: Photo studio | Home
             </div>
             <div class="card card__maxi">
                 <div class="card__title">MAXI</div>
-                <div class="card__price">N ₽</div>
+                <div class="card__price"><span>N</span> ₽</div>
                 <div class="card__location">/ Максимальное количество локаций</div>
 
                 <div class="card__wrapper">
@@ -597,7 +618,7 @@ title: Photo studio | Home
                 <div class="gift__text">
                     Срок действия сертификата: 2 месяца со дня приобретения.
                 </div>
-                <div class="button button-gift">Приобрести</div>
+                <div class="button button-gift from-back-call">Приобрести</div>
             </div>
         </div>
     </div>
@@ -609,7 +630,7 @@ title: Photo studio | Home
 
         <div class="reviews__wrapper">
             <div class="reviews__button-left">
-                <div class="button__slide button__slide-reviews">
+                <div class="button__slide button__slide-reviews" id="swiper-button-reviews-prev" >
                     <svg class="arrow">
                         <use xlink:href="#arrow"></use>
                     </svg>
@@ -617,95 +638,97 @@ title: Photo studio | Home
             </div>
 
             <div class="reviews__slider">
-                <div class="reviews__slides">
-                    <div class="reviews__comment">
-                        <div class="reviews__img reviews__img-1">
-                            <img src="./assets/images/reviews/2.png" alt="user" />
+                <div class="reviews__slider-wrapper">
+                    <div class="reviews__slides">
+                        <div class="reviews__comment">
+                            <div class="reviews__img reviews__img-1">
+                                <img src="./assets/images/reviews/2.png" alt="user" />
+                            </div>
+                            <div class="reviews__name">Мария</div>
+                            <div class="reviews__discription">
+                                Съешь еще этих мягких французских булок, да выпей чаю. Съешь еще
+                                этих мягких французских булок, да выпей чаю. Съешь еще этих мягких
+                                французских булок, да выпей чаю.
+                            </div>
+                            <div class="reviews__show">Показать ещё</div>
                         </div>
-                        <div class="reviews__name">Мария</div>
-                        <div class="reviews__discription">
-                            Съешь еще этих мягких французских булок, да выпей чаю. Съешь еще
-                            этих мягких французских булок, да выпей чаю. Съешь еще этих мягких
-                            французских булок, да выпей чаю.
+    
+                        <div class="reviews__comment">
+                            <div class="reviews__img reviews__img-2">
+                                <img src="./assets/images/reviews/1.png" alt="user" />
+                            </div>
+                            <div class="reviews__name">Сергей</div>
+                            <div class="reviews__discription">
+                                Съешь еще этих мягких французских булок, да выпей чаю. Съешь еще
+                                этих мягких французских булок, да выпей чаю. Съешь еще этих мягких
+                                французских булок, да выпей чаю.
+                            </div>
+                            <div class="reviews__show">Показать ещё</div>
+    
+                            <div class="button__reviews">Добавить отзыв</div>
                         </div>
-                        <div class="reviews__show">Показать ещё</div>
+    
+                        <div class="reviews__comment">
+                            <div class="reviews__img reviews__img-3">
+                                <img src="./assets/images/reviews/3.png" alt="user" />
+                            </div>
+                            <div class="reviews__name">Руслан</div>
+                            <div class="reviews__discription">
+                                Съешь еще этих мягких французских булок, да выпей чаю. Съешь еще
+                                этих мягких французских булок, да выпей чаю. Съешь еще этих мягких
+                                французских булок, да выпей чаю.
+                            </div>
+                            <div class="reviews__show">Показать ещё</div>
+                        </div>
                     </div>
-
-                    <div class="reviews__comment">
-                        <div class="reviews__img reviews__img-2">
-                            <img src="./assets/images/reviews/1.png" alt="user" />
+    
+                    <div class="reviews__slides">
+                        <div class="reviews__comment">
+                            <div class="reviews__img reviews__img-1">
+                                <img src="./assets/images/reviews/2.png" alt="user" />
+                            </div>
+                            <div class="reviews__name">Екатерина</div>
+                            <div class="reviews__discription">
+                                Съешь еще этих мягких французских булок, да выпей чаю. Съешь еще
+                                этих мягких французских булок, да выпей чаю. Съешь еще этих мягких
+                                французских булок, да выпей чаю.
+                            </div>
+                            <div class="reviews__show">Показать ещё</div>
                         </div>
-                        <div class="reviews__name">Сергей</div>
-                        <div class="reviews__discription">
-                            Съешь еще этих мягких французских булок, да выпей чаю. Съешь еще
-                            этих мягких французских булок, да выпей чаю. Съешь еще этих мягких
-                            французских булок, да выпей чаю.
+    
+                        <div class="reviews__comment">
+                            <div class="reviews__img reviews__img-2">
+                                <img src="./assets/images/reviews/1.png" alt="user" />
+                            </div>
+                            <div class="reviews__name">Валентин</div>
+                            <div class="reviews__discription">
+                                Съешь еще этих мягких французских булок, да выпей чаю. Съешь еще
+                                этих мягких французских булок, да выпей чаю. Съешь еще этих мягких
+                                французских булок, да выпей чаю.
+                            </div>
+                            <div class="reviews__show">Показать ещё</div>
+    
+                            <div class="button__reviews">Добавить отзыв</div>
                         </div>
-                        <div class="reviews__show">Показать ещё</div>
-
-                        <div class="button__reviews">Добавить отзыв</div>
-                    </div>
-
-                    <div class="reviews__comment">
-                        <div class="reviews__img reviews__img-3">
-                            <img src="./assets/images/reviews/3.png" alt="user" />
+    
+                        <div class="reviews__comment">
+                            <div class="reviews__img reviews__img-3">
+                                <img src="./assets/images/reviews/3.png" alt="user" />
+                            </div>
+                            <div class="reviews__name">Максим</div>
+                            <div class="reviews__discription">
+                                Съешь еще этих мягких французских булок, да выпей чаю. Съешь еще
+                                этих мягких французских булок, да выпей чаю. Съешь еще этих мягких
+                                французских булок, да выпей чаю.
+                            </div>
+                            <div class="reviews__show">Показать ещё</div>
                         </div>
-                        <div class="reviews__name">Руслан</div>
-                        <div class="reviews__discription">
-                            Съешь еще этих мягких французских булок, да выпей чаю. Съешь еще
-                            этих мягких французских булок, да выпей чаю. Съешь еще этих мягких
-                            французских булок, да выпей чаю.
-                        </div>
-                        <div class="reviews__show">Показать ещё</div>
-                    </div>
-                </div>
-
-                <div class="reviews__slides">
-                    <div class="reviews__comment">
-                        <div class="reviews__img reviews__img-1">
-                            <img src="./assets/images/reviews/2.png" alt="user" />
-                        </div>
-                        <div class="reviews__name">Мария</div>
-                        <div class="reviews__discription">
-                            Съешь еще этих мягких французских булок, да выпей чаю. Съешь еще
-                            этих мягких французских булок, да выпей чаю. Съешь еще этих мягких
-                            французских булок, да выпей чаю.
-                        </div>
-                        <div class="reviews__show">Показать ещё</div>
-                    </div>
-
-                    <div class="reviews__comment">
-                        <div class="reviews__img reviews__img-2">
-                            <img src="./assets/images/reviews/1.png" alt="user" />
-                        </div>
-                        <div class="reviews__name">Сергей</div>
-                        <div class="reviews__discription">
-                            Съешь еще этих мягких французских булок, да выпей чаю. Съешь еще
-                            этих мягких французских булок, да выпей чаю. Съешь еще этих мягких
-                            французских булок, да выпей чаю.
-                        </div>
-                        <div class="reviews__show">Показать ещё</div>
-
-                        <div class="button__reviews">Добавить отзыв</div>
-                    </div>
-
-                    <div class="reviews__comment">
-                        <div class="reviews__img reviews__img-3">
-                            <img src="./assets/images/reviews/3.png" alt="user" />
-                        </div>
-                        <div class="reviews__name">Руслан</div>
-                        <div class="reviews__discription">
-                            Съешь еще этих мягких французских булок, да выпей чаю. Съешь еще
-                            этих мягких французских булок, да выпей чаю. Съешь еще этих мягких
-                            французских булок, да выпей чаю.
-                        </div>
-                        <div class="reviews__show">Показать ещё</div>
                     </div>
                 </div>
             </div>
 
             <div class="reviews__button-right">
-                <div class="button__slide button__slide-reviews button__slide-right">
+                <div class="button__slide button__slide-reviews button__slide-right"  id="swiper-button-reviews-next">
                     <svg class="arrow arrow-right">
                         <use xlink:href="#arrow"></use>
                     </svg>

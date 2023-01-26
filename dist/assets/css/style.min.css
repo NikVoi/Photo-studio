@@ -84,6 +84,7 @@ h1, h2, h3, h4, h5, h6 {
 .header__logo {
   width: 108px;
   height: 35px;
+  animation: 0.5s ease-out 0s puff-in-center;
 }
 .header__logo .header__logo-img {
   width: 108px;
@@ -102,6 +103,7 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   align-items: center;
   margin-right: 24px;
+  animation: 0.5s ease-out 0s puff-in-center;
 }
 
 .header__tel {
@@ -110,6 +112,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 14px;
   font-weight: 600;
   color: #4A4A4A;
+  animation: 0.5s ease-out 0s puff-in-center;
 }
 .header__tel svg {
   display: none;
@@ -127,6 +130,7 @@ nav {
   margin-right: 32px;
   color: #4A4A4A;
   font-weight: 500;
+  animation: 0.5s ease-out 0s puff-in-center;
 }
 .nav__item-footer {
   font-size: 16px;
@@ -292,7 +296,7 @@ nav {
   justify-content: space-between;
   align-items: center;
   position: absolute;
-  top: 430px;
+  top: 400px;
   right: 0;
   color: #E97522;
   stroke: #E97522;
@@ -401,7 +405,7 @@ location {
 }
 
 .location__wrapper {
-  display: flex;
+  position: relative;
   margin-bottom: 56px;
   overflow: hidden;
 }
@@ -424,6 +428,7 @@ location {
   margin-right: 27px;
   border-radius: 10px;
   cursor: pointer;
+  transition: 0.4s;
 }
 .location__item img {
   width: 395px;
@@ -433,6 +438,13 @@ location {
 .location__item:hover .location__name {
   transition: 0.5s;
   bottom: 50px;
+}
+
+.location__nav {
+  display: flex;
+  transition: 0.4s;
+  position: relative;
+  left: 0;
 }
 
 .location__buttons {
@@ -510,6 +522,7 @@ location {
   border: 2px solid #E97522;
   box-shadow: 0px 24px 38px rgba(220, 220, 220, 0.14), 0px 9px 46px rgba(216, 216, 216, 0.12), 0px 11px 15px rgba(221, 221, 221, 0.2);
   border-radius: 12px;
+  animation: 0.5s ease-out 0s scale-in-center;
 }
 .work__item:first-child {
   left: 0px;
@@ -568,7 +581,7 @@ location {
 
 .about {
   transition: 1s;
-  height: 490px;
+  height: 460px;
   background-color: #F2F4F4;
 }
 .about.active {
@@ -580,6 +593,9 @@ location {
   height: 1200px;
 }
 .about.active .box-shdow {
+  display: none;
+}
+.about.active .about-shadow-prev {
   display: none;
 }
 .about-2 {
@@ -624,7 +640,7 @@ location {
 
 .about__description {
   transition: 1s;
-  height: 310px;
+  height: 240px;
   overflow: hidden;
   font-weight: 500;
   font-size: 16px;
@@ -648,6 +664,10 @@ location {
 .about-shadow-3,
 .about-shadow-4 {
   display: none;
+}
+
+.about-shadow-prev {
+  display: contents;
 }
 
 .slider {
@@ -954,11 +974,18 @@ location {
   height: 100%;
   overflow: hidden;
 }
+.reviews__slider-wrapper {
+  display: flex;
+  position: relative;
+  left: 0;
+}
 
 .reviews__slides {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
+  transition: 0.3s;
   height: 100%;
   margin-right: 20px;
 }
@@ -1280,7 +1307,7 @@ input::placeholder {
 
 .popUp {
   display: none;
-  position: absolute;
+  position: fixed;
   z-index: 100;
   top: 0;
   left: 0;
@@ -1288,7 +1315,7 @@ input::placeholder {
   height: 100%;
 }
 .popUp.active {
-  display: none;
+  display: flex;
   justify-content: center;
   align-items: center;
   background: rgba(33, 33, 33, 0.5);
@@ -1302,6 +1329,9 @@ input::placeholder {
   background: #fff;
   padding: 60px 40px 60px 34px;
   border-radius: 15px;
+}
+.popUp__form.active {
+  display: block;
 }
 
 .popUp__close {
@@ -1359,13 +1389,16 @@ input::placeholder {
 }
 
 .popUp__galary {
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
   position: relative;
   width: 100%;
   height: 100%;
   background-color: #fff;
+}
+.popUp__galary.active {
+  display: flex;
 }
 
 .popUp__slider {
@@ -1415,6 +1448,245 @@ input::placeholder {
 }
 .popUp__buttons .button__slide-right {
   right: 0;
+}
+
+.popUp__price {
+  display: none;
+  position: relative;
+  background: #fff;
+  padding: 42px 48px;
+  border-radius: 15px;
+}
+.popUp__price.active {
+  display: flex;
+}
+
+.popUp__title {
+  width: 590px;
+  margin-bottom: 20px;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 120%;
+  text-align: center;
+  color: #333333;
+}
+
+@-webkit-keyframes scale-in-hor-center {
+  0% {
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+    opacity: 1;
+  }
+}
+@keyframes scale-in-hor-center {
+  0% {
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+    opacity: 1;
+  }
+}
+@-webkit-keyframes slide-in-fwd-center {
+  0% {
+    -webkit-transform: translateZ(-1400px);
+    transform: translateZ(-1400px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-fwd-center {
+  0% {
+    -webkit-transform: translateZ(-1400px);
+    transform: translateZ(-1400px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fade-in-fwd {
+  0% {
+    -webkit-transform: translateZ(-80px);
+    transform: translateZ(-80px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    opacity: 1;
+  }
+}
+@keyframes fade-in-fwd {
+  0% {
+    -webkit-transform: translateZ(-80px);
+    transform: translateZ(-80px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    opacity: 1;
+  }
+}
+@-webkit-keyframes puff-in-center {
+  0% {
+    -webkit-transform: scale(2);
+    transform: scale(2);
+    -webkit-filter: blur(4px);
+    filter: blur(4px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    opacity: 1;
+  }
+}
+@keyframes puff-in-center {
+  0% {
+    -webkit-transform: scale(2);
+    transform: scale(2);
+    -webkit-filter: blur(4px);
+    filter: blur(4px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    opacity: 1;
+  }
+}
+@-webkit-keyframes scale-in-center {
+  0% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+@keyframes scale-in-center {
+  0% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+@-webkit-keyframes slide-in-blurred-right {
+  0% {
+    -webkit-transform: translateX(1000px) scaleX(2.5) scaleY(0.2);
+    transform: translateX(1000px) scaleX(2.5) scaleY(0.2);
+    -webkit-transform-origin: 0% 50%;
+    transform-origin: 0% 50%;
+    -webkit-filter: blur(40px);
+    filter: blur(40px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0) scaleY(1) scaleX(1);
+    transform: translateX(0) scaleY(1) scaleX(1);
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    -webkit-filter: blur(0);
+    filter: blur(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-blurred-right {
+  0% {
+    -webkit-transform: translateX(1000px) scaleX(2.5) scaleY(0.2);
+    transform: translateX(1000px) scaleX(2.5) scaleY(0.2);
+    -webkit-transform-origin: 0% 50%;
+    transform-origin: 0% 50%;
+    -webkit-filter: blur(40px);
+    filter: blur(40px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0) scaleY(1) scaleX(1);
+    transform: translateX(0) scaleY(1) scaleX(1);
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    -webkit-filter: blur(0);
+    filter: blur(0);
+    opacity: 1;
+  }
+}
+.slide-move-right {
+  animation-name: slide-in-blurred-right;
+  animation-duration: 0.6s;
+}
+
+@-webkit-keyframes slide-in-blurred-left {
+  0% {
+    -webkit-transform: translateX(-1000px) scaleX(2.5) scaleY(0.2);
+    transform: translateX(-1000px) scaleX(2.5) scaleY(0.2);
+    -webkit-transform-origin: 100% 50%;
+    transform-origin: 100% 50%;
+    -webkit-filter: blur(40px);
+    filter: blur(40px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0) scaleY(1) scaleX(1);
+    transform: translateX(0) scaleY(1) scaleX(1);
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    -webkit-filter: blur(0);
+    filter: blur(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-blurred-left {
+  0% {
+    -webkit-transform: translateX(-1000px) scaleX(2.5) scaleY(0.2);
+    transform: translateX(-1000px) scaleX(2.5) scaleY(0.2);
+    -webkit-transform-origin: 100% 50%;
+    transform-origin: 100% 50%;
+    -webkit-filter: blur(40px);
+    filter: blur(40px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0) scaleY(1) scaleX(1);
+    transform: translateX(0) scaleY(1) scaleX(1);
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    -webkit-filter: blur(0);
+    filter: blur(0);
+    opacity: 1;
+  }
+}
+.slide-move-left {
+  animation-name: slide-in-blurred-left;
+  animation-duration: 0.6s;
 }
 
 footer {
@@ -2250,6 +2522,12 @@ hr {
     top: 820px;
     right: 100px;
   }
+  .about-shadow,
+  .about-shadow-2,
+  .about-shadow-4,
+  .about-shadow-prev {
+    display: none;
+  }
   .about > .container {
     width: 340px;
     text-align: center;
@@ -2258,7 +2536,7 @@ hr {
     height: 880px;
   }
   .about.active {
-    height: 2550px;
+    height: 2560px;
   }
   .about.active .about__description {
     transition: 1s;
@@ -2267,6 +2545,9 @@ hr {
   .about.active .button__open {
     top: 2500px;
     right: 110px;
+  }
+  .about.active .about-shadow-3 {
+    display: none;
   }
   .about-2 {
     height: 900px;
@@ -2295,6 +2576,9 @@ hr {
   .about-2.active .about__description {
     transition: 1s;
     height: 1800px;
+  }
+  .about-2.active .about-shadow-4 {
+    display: none;
   }
   .about > .container {
     position: relative;
@@ -2554,7 +2838,7 @@ hr {
   }
   .reviews__slides {
     height: 100%;
-    margin-right: 20px;
+    margin-right: 0px;
   }
   .reviews__comment {
     display: flex;
@@ -2614,6 +2898,7 @@ hr {
     position: absolute;
     top: 230px;
     left: 0;
+    z-index: 10;
   }
   .button__slide-reviews {
     position: static;

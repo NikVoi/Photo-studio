@@ -1,6 +1,6 @@
 .about {
     transition: 1s;
-    height: 490px;
+    height: 460px;
     background-color: $firstBG;
 
     &.active {
@@ -13,6 +13,10 @@
         }
 
         & .box-shdow {
+            display: none;
+        }
+
+        & .about-shadow-prev {
             display: none;
         }
     }
@@ -67,7 +71,7 @@
 
 .about__description {
     transition: 1s;
-    height: 310px;
+    height: 240px;
     overflow: hidden;
 
     font-weight: 500;
@@ -85,6 +89,8 @@
         & .show {
             display: none;
         }
+
+        
     }
 }
 .close {display: none;}
@@ -93,3 +99,8 @@
 .about-shadow-2,
 .about-shadow-3,
 .about-shadow-4 {display: none;}
+
+.about-shadow-prev {
+    display: contents;
+}
+

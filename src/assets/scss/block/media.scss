@@ -977,6 +977,11 @@
         right: 100px;
     }
 
+    .about-shadow,
+    .about-shadow-2,
+    .about-shadow-4,
+    .about-shadow-prev {display: none;}
+
     .about > .container {
         width: 340px;
         text-align: center;
@@ -986,7 +991,7 @@
         height: 880px;
 
         &.active {
-            height: 2550px;
+            height: 2560px;
 
             & .about__description {
                 transition: 1s;
@@ -996,6 +1001,10 @@
             & .button__open {
                 top: 2500px;
                 right: 110px;
+            }
+
+            .about-shadow-3 {
+               display: none;
             }
         }
 
@@ -1031,6 +1040,10 @@
                 & .about__description {
                     transition: 1s;
                     height: 1800px;
+                }
+
+                & .about-shadow-4 {
+                    display: none;
                 }
             }
         }
@@ -1378,7 +1391,7 @@
 
     .reviews__slides {
         height: 100%;
-        margin-right: 20px;
+        margin-right: 0px;
     }
 
     .reviews__comment {
@@ -1454,6 +1467,7 @@
         position: absolute;
         top: 230px;
         left: 0;
+        z-index: 10;
     }
 
     .button__slide-reviews {
