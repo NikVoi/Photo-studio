@@ -657,6 +657,9 @@
 
 
 
+
+
+
 }
 
 @media (max-width: 892px) {
@@ -1557,7 +1560,7 @@
 
     .form__main {
         width: 320px;
-        height: 540px;
+        height: 500px;
 
         position: relative;
         top: -30px;
@@ -1843,4 +1846,24 @@
     .close-pop{
         stroke: #D8D8D8;
     }
+
+    .popUp__gratitude {
+        width: 335px;
+        height: 330px;
+    
+        padding: 98px 0;
+
+        background-position: top -15px right -50px, bottom left;
+    }
+    
+    .gratitude__title {
+        margin-bottom: 24px;
+    
+        font-size: 22px;
+    }
+    
+    .gratitude__text {
+        font-size: 14px;
+    }
+
 }
