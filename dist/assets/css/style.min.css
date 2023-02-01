@@ -1156,6 +1156,10 @@ location {
   line-height: 120%;
   color: #4A4A4A;
 }
+.form__title-reviws {
+  width: 590px;
+  font-size: 36px;
+}
 
 label {
   padding: 16px 0 8px;
@@ -1167,12 +1171,26 @@ label {
 }
 
 .form__input {
+  position: relative;
   width: 420px;
   height: 48px;
   padding: 18px 16px;
   border: 1px solid #DDDEE4;
   border-radius: 5px;
   color: #B1B1B1;
+}
+.form__input-img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  cursor: pointer;
+}
+.form__input-reviews {
+  height: 100px;
+}
+
+.form__inputs {
+  position: relative;
 }
 
 input::target-text,
@@ -1352,6 +1370,7 @@ input::placeholder {
 .close-pop {
   width: 100%;
   height: 100%;
+  stroke: #fff;
 }
 
 .popUp__gratitude {
@@ -1469,6 +1488,32 @@ input::placeholder {
   line-height: 120%;
   text-align: center;
   color: #333333;
+}
+
+.popUp__location {
+  display: none;
+  position: relative;
+  width: 1060px;
+  height: 600px;
+  background: #fff;
+  padding: 60px 40px 60px 34px;
+  border-radius: 15px;
+}
+.popUp__location.active {
+  display: flex;
+}
+
+.popUp__reviews {
+  display: none;
+  position: relative;
+  width: 1080px;
+  height: 610px;
+  background: #fff;
+  padding: 60px 40px 60px 34px;
+  border-radius: 15px;
+}
+.popUp__reviews.active {
+  display: flex;
 }
 
 @-webkit-keyframes scale-in-hor-center {
@@ -1774,6 +1819,10 @@ hr {
 .menu {
   position: fixed;
   left: 100%;
+}
+
+.block {
+  overflow-y: hidden;
 }
 
 @media (max-width: 1240px) {
@@ -2244,6 +2293,33 @@ hr {
   .nav__footer .nav__item-footer {
     width: 25%;
     text-align: center;
+  }
+  .popUp__form {
+    display: none;
+    position: relative;
+    width: 840px;
+    height: 500px;
+    background: #fff;
+    padding: 25px 25px 27px;
+    border-radius: 15px;
+  }
+  .popUp__form.active {
+    display: block;
+  }
+  .form__picter {
+    width: 360px;
+    height: 330px;
+  }
+  .form__picter img {
+    width: 360px;
+    height: 330px;
+  }
+  .form__active-popUp {
+    width: 100%;
+  }
+  .form__main-popUp {
+    padding: 0;
+    margin-left: 27px;
   }
 }
 @media (max-width: 892px) {
@@ -3085,5 +3161,59 @@ hr {
     margin-bottom: 16px;
     font-size: 14px;
     text-align: center;
+  }
+  .popUp__form {
+    display: none;
+    position: relative;
+    width: 330px;
+    height: 530px;
+    background: #fff;
+    padding: 15px;
+    border-radius: 15px;
+  }
+  .popUp__form.active {
+    display: block;
+  }
+  .form__picter {
+    width: 120px;
+    height: 110px;
+    margin-bottom: 32px;
+  }
+  .form__picter img {
+    width: 100%;
+    height: 100%;
+  }
+  .form__wrapper-popUp {
+    width: 100%;
+    height: 100%;
+  }
+  .form__main-popUp {
+    padding: 0;
+    margin-left: 0px;
+  }
+  .form__title {
+    font-size: 22px;
+    margin-bottom: 6px;
+  }
+  .form__inputs label {
+    padding-top: 10px;
+  }
+  .form__input {
+    height: 32px;
+  }
+  .form__main-popUp .button-form {
+    margin-top: 16px;
+    width: 280px;
+    height: 40px;
+  }
+  .form__discription {
+    width: 290px;
+  }
+  .popUp__close {
+    top: 12px;
+    right: 12px;
+  }
+  .close-pop {
+    stroke: #D8D8D8;
   }
 }

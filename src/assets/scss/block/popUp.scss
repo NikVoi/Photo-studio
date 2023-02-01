@@ -58,6 +58,8 @@
 .close-pop {
     width: 100%;
     height: 100%;
+
+    stroke: $white;
 }
 
 .popUp__gratitude {
@@ -117,8 +119,6 @@
 }
 
 .popUp__slider {
-    
-
     position: relative;
 
     width: 500px;
@@ -202,4 +202,40 @@
     line-height: 120%;
     text-align: center;
     color: #333333;
+}
+
+.popUp__location {
+    display: none;
+
+    position: relative;
+    width: 1060px;
+    height: 600px;
+
+    background: $white;
+
+    padding: 60px 40px 60px 34px;
+
+    border-radius: 15px;
+
+    &.active {
+        display: flex;
+    }
+}
+
+.popUp__reviews{
+    display: none;
+
+    position: relative;
+    width: 1080px;
+    height: 610px;
+
+    background: $white;
+
+    padding: 60px 40px 60px 34px;
+
+    border-radius: 15px;
+
+    &.active {
+        display: flex;
+    }
 }

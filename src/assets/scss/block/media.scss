@@ -616,6 +616,47 @@
             text-align: center;
         }
     }
+    
+    .popUp__form{
+        display: none;
+    
+        position: relative;
+        width: 840px;
+        height: 500px;
+    
+        background: $white;
+    
+        padding: 25px 25px 27px;
+    
+        border-radius: 15px;
+    
+        &.active {
+            display: block;
+        }
+    }
+
+    .form__picter {
+        width: 360px;
+        height: 330px;
+
+        & img {
+            width: 360px;
+            height: 330px;
+        }
+    }
+
+    .form__active-popUp {
+        width: 100%;
+    }
+
+    .form__main-popUp {
+        padding: 0;
+
+        margin-left: 27px;
+    }
+
+
+
 }
 
 @media (max-width: 892px) {
@@ -1725,5 +1766,81 @@
             font-size: $fs14;
             text-align: center;
         }
+    }
+
+
+    .popUp__form{
+        display: none;
+    
+        position: relative;
+        width: 330px;
+        height: 530px;
+    
+        background: $white;
+    
+        padding: 15px;
+    
+        border-radius: 15px;
+    
+        &.active {
+            display: block;
+        }
+    }
+
+    .form__picter {
+        width: 120px;
+        height: 110px;
+
+        margin-bottom: 32px;
+
+        & img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    .form__wrapper-popUp {
+        width: 100%;
+        height: 100%;
+
+    }
+
+    .form__main-popUp {
+        padding: 0;
+
+        margin-left: 0px;
+    }
+
+    .form__title {
+        font-size: 22px;
+        margin-bottom: 6px;
+    }
+
+    .form__inputs label{
+        padding-top: 10px;
+    }
+
+    .form__input {
+        height: 32px;
+    }
+
+    .form__main-popUp {
+        & .button-form {
+            margin-top: 16px;
+            width: 280px;
+            height: 40px;
+        }
+    }
+
+    .form__discription {
+        width: 290px;
+    }
+
+    .popUp__close {
+        top: 12px;
+        right: 12px;
+    }
+    .close-pop{
+        stroke: #D8D8D8;
     }
 }

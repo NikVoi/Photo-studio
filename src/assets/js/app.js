@@ -1,4 +1,5 @@
-const mainPopUp = document.querySelector(".popUp");
+const mainPopUp = document.querySelector(".popUp"),
+    block = document.querySelector("body");
 
 
 // open mobile menu
@@ -23,10 +24,10 @@ const buttonOpen = document.querySelectorAll(".button__open");
 
 buttonOpen.forEach(elem => {
     elem.addEventListener("click", () => {
-            console.log( );
             if (elem.classList.toggle('active')){
                 elem.classList.add('active')
                 elem.parentElement.parentElement.classList.add('active')
+                block.classList.add("block")
             }
             else {
                 elem.classList.remove('active')
@@ -49,6 +50,7 @@ formButton.forEach(elem => {
     elem.addEventListener("click", () => {
         mainPopUp.classList.add("active")
         backForm.classList.add("active")
+        block.classList.add("block")
     })
 })
 
@@ -179,6 +181,7 @@ const closeModal = () => {
             openPopUpPhoto.classList.remove("active")
             backForm.classList.remove("active")
             graduateform.classList.remove("active")
+            block.classList.remove("block")
         })
     })
 }
