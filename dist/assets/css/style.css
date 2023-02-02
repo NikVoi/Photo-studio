@@ -286,8 +286,8 @@ nav {
 
 .button__slide {
     position: absolute;
-    left: -38px;
-    top: 150px;
+    left: 0;
+    top: 0;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: center;
@@ -304,8 +304,8 @@ nav {
 
 .button__slide-right {
     position: absolute;
-    left: 1207px;
-    top: 150px;
+    left: 750px;
+    top: 0;
     -webkit-transform: rotate(180deg);
     transform: rotate(180deg);
 }
@@ -776,20 +776,47 @@ location {
 }
 
 .slider__wrapper {
+    position: relative;
     display: -ms-flexbox;
     display: flex;
+    max-width: 1440px;
+    margin: 0 auto;
     overflow-x: hidden;
+    height: 620px;
+}
+
+.slider__wrapper-do {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
 }
 
 .slider__item {
+    position: relative;
     width: 480px;
     height: 545px;
+    left: -20px;
     cursor: pointer;
+    transition: 0.3s;
 }
 
 .slider__item img {
-    width: inherit;
-    height: inherit;
+    width: 100%;
+    height: 100%;
+}
+
+.slider__item.active {
+    width: 550px;
+    height: 620px;
+    transition: 0.3s;
+}
+
+.slider__buttons {
+    position: absolute;
+    width: 200px;
+    left: 330px;
+    top: 270px;
 }
 
 .slider__dots {
@@ -877,6 +904,8 @@ location {
     width: inherit;
     height: inherit;
     border-radius: 15px;
+    -o-object-fit: cover;
+    object-fit: cover;
 }
 
 .services__item p {
@@ -1301,6 +1330,11 @@ location {
     color: #4A4A4A;
 }
 
+.form__title-reviws {
+    width: 590px;
+    font-size: 36px;
+}
+
 label {
     padding: 16px 0 8px;
     display: block;
@@ -1311,12 +1345,28 @@ label {
 }
 
 .form__input {
+    position: relative;
     width: 420px;
     height: 48px;
     padding: 18px 16px;
     border: 1px solid #DDDEE4;
     border-radius: 5px;
     color: #B1B1B1;
+}
+
+.form__input-img {
+    position: absolute;
+    bottom: 12px;
+    right: 12px;
+    cursor: pointer;
+}
+
+.form__input-reviews {
+    height: 100px;
+}
+
+.form__inputs {
+    position: relative;
 }
 
 input::-webkit-input-placeholder {
@@ -1531,6 +1581,7 @@ input::placeholder {
 .close-pop {
     width: 100%;
     height: 100%;
+    stroke: #fff;
 }
 
 .popUp__gratitude {
@@ -1664,6 +1715,41 @@ input::placeholder {
     line-height: 120%;
     text-align: center;
     color: #333333;
+}
+
+.popUp__location {
+    display: none;
+    position: relative;
+    width: 1060px;
+    height: 600px;
+    background: #fff;
+    padding: 60px 40px 60px 34px;
+    border-radius: 15px;
+}
+
+.popUp__location.active {
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.popUp__reviews {
+    display: none;
+    position: relative;
+    width: 1030px;
+    height: 620px;
+    background: #fff;
+    -ms-flex-pack: center;
+    justify-content: center;
+    border-radius: 15px;
+}
+
+.popUp__reviews.active {
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.form__title-reviws {
+    font-size: 32px;
 }
 
 @-webkit-keyframes scale-in-hor-center {
@@ -2011,6 +2097,10 @@ hr {
 .menu {
     position: fixed;
     left: 100%;
+}
+
+.block {
+    overflow-y: hidden;
 }
 
 @media (max-width: 1240px) {
@@ -2603,6 +2693,83 @@ hr {
         width: 25%;
         text-align: center;
     }
+
+    .popUp__form {
+        display: none;
+        position: relative;
+        width: 840px;
+        height: 500px;
+        background: #fff;
+        padding: 25px 25px 27px;
+        border-radius: 15px;
+    }
+
+    .popUp__form.active {
+        display: block;
+    }
+
+    .form__picter {
+        width: 360px;
+        height: 330px;
+    }
+
+    .form__picter img {
+        width: 360px;
+        height: 330px;
+    }
+
+    .form__active-popUp {
+        width: 100%;
+    }
+
+    .form__main-popUp {
+        padding: 0;
+        margin-left: 27px;
+    }
+
+    .popUp__location {
+        width: 840px;
+        height: 560px;
+        padding: 40px 45px 34px 25px;
+    }
+
+    .popUp__location > .form__wrapper-popUp > .form__main-popUp {
+        width: auto;
+        margin-left: 0;
+    }
+
+    .popUp__location > .form__wrapper-popUp > .form__main-popUp > .button-form {
+        width: 380px;
+    }
+
+    .popUp__reviews {
+        width: 840px;
+        height: auto;
+        padding: 20px 0;
+    }
+
+    .popUp__reviews .form__picter {
+        width: 320px;
+        height: 350px;
+    }
+
+    .popUp__reviews .form__picter img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .form__title-reviws {
+        font-size: 28px;
+    }
+
+    .popUp__reviews .form__input {
+        height: 40px;
+        padding: 14px 15px;
+    }
+
+    .popUp__reviews .button-form {
+        width: 380px;
+    }
 }
 
 @media (max-width: 892px) {
@@ -3194,6 +3361,8 @@ hr {
         display: flex;
         -ms-flex-pack: center;
         justify-content: center;
+        margin: 0 auto;
+        width: 345px;
         height: auto;
     }
 
@@ -3469,7 +3638,7 @@ hr {
 
     .form__main {
         width: 320px;
-        height: 540px;
+        height: 500px;
         position: relative;
         top: -30px;
         display: -ms-flexbox;
@@ -3663,5 +3832,155 @@ hr {
         margin-bottom: 16px;
         font-size: 14px;
         text-align: center;
+    }
+
+    .popUp__form {
+        display: none;
+        position: relative;
+        width: 330px;
+        height: 530px;
+        background: #fff;
+        padding: 15px;
+        border-radius: 15px;
+    }
+
+    .popUp__form.active {
+        display: block;
+    }
+
+    .form__picter {
+        width: 120px;
+        height: 110px;
+        margin-bottom: 32px;
+    }
+
+    .form__picter img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .form__wrapper-popUp {
+        width: 100%;
+        height: 100%;
+    }
+
+    .form__main-popUp {
+        padding: 0;
+        margin-left: 0px;
+    }
+
+    .form__title {
+        font-size: 22px;
+        margin-bottom: 6px;
+    }
+
+    .form__inputs label {
+        padding-top: 10px;
+    }
+
+    .form__input {
+        height: 32px;
+    }
+
+    .form__main-popUp .button-form {
+        margin-top: 16px;
+        width: 280px;
+        height: 40px;
+    }
+
+    .form__discription {
+        width: 290px;
+    }
+
+    .popUp__close {
+        top: 12px;
+        right: 12px;
+    }
+
+    .close-pop {
+        stroke: #D8D8D8;
+    }
+
+    .popUp__gratitude {
+        width: 335px;
+        height: 330px;
+        padding: 98px 0;
+        background-position: top -15px right -50px, bottom left;
+    }
+
+    .gratitude__title {
+        margin-bottom: 24px;
+        font-size: 22px;
+    }
+
+    .gratitude__text {
+        font-size: 14px;
+    }
+
+    .popUp__price {
+        width: 330px;
+        height: 260px;
+        padding: 40px 25px;
+    }
+
+    .popUp__title {
+        width: auto;
+        margin-top: 30px;
+        margin-bottom: 15px;
+        font-size: 22px;
+    }
+
+    .popUp__location {
+        width: 340px;
+        height: 600px;
+        padding: 22px 27px 28px;
+    }
+
+    .popUp__location > .form__wrapper-popUp > .form__main-popUp {
+        width: auto;
+        margin-left: 0;
+    }
+
+    .popUp__location > .form__wrapper-popUp > .form__main-popUp > .button-form {
+        width: 280px;
+    }
+
+    .popUp__location > .form__wrapper-popUp > .form__picter {
+        margin-top: 30px;
+    }
+
+    .popUp__reviews .form__wrapper {
+        -ms-flex-direction: column-reverse;
+        flex-direction: column-reverse;
+    }
+
+    .popUp__reviews {
+        width: 336px;
+        height: auto;
+        padding: 20px 0;
+    }
+
+    .popUp__reviews .form__picter {
+        width: 120px;
+        height: 125px;
+    }
+
+    .popUp__reviews .form__picter img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .form__title-reviws {
+        width: 270px;
+        font-size: 22px;
+    }
+
+    .popUp__reviews .form__input {
+        height: 32px;
+        padding: 10px 12px;
+    }
+
+    .popUp__reviews .button-form {
+        width: 280px;
     }
 }

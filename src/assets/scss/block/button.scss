@@ -136,8 +136,8 @@
 
 .button__slide {
     position: absolute;
-    left: -38px;
-    top: 150px;
+    left: 0;
+    top: 0;
 
     display: flex;
     justify-content: center;
@@ -155,8 +155,8 @@
 
     &-right {
         position: absolute;
-        left: 1207px;
-        top: 150px;
+        left: 750px;
+        top: 0;
 
         transform: rotate(180deg);
     }

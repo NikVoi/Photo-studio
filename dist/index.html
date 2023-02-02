@@ -131,7 +131,7 @@
         <div class="menu__item"><a href="#"> Контакты </a></div>
     </section>
     
-    <div class="popUp active">
+    <div class="popUp">
         
     
         <div class="popUp__form">
@@ -174,7 +174,7 @@
             </div>
         </div>
     
-        <div class="popUp__gratitude active">
+        <div class="popUp__gratitude">
             <div class="popUp__close">
                 <svg class="close-pop">
                     <use xlink:href="#close"></use>
@@ -206,7 +206,6 @@
             </div>
     
             <div class="popUp__slider">
-                
     
                 <div class="popUp__slider-wrapper">
                     <div class="popUp__slider-item">
@@ -227,7 +226,7 @@
             </div>
         </div>
     
-        <div class="popUp__price">
+        <div class="popUp__price ">
             <div class="popUp__close">
                 <svg class="close-pop">
                     <use xlink:href="#close"></use>
@@ -240,7 +239,7 @@
                 
                 <div class="form__inputs">
                     <label for="">Количество</label>
-                    <input type="number" class="form__input" id="pricePhoto" placeholder="Введите количество фото для ретуши" />
+                    <input type="number" class="form__input" min=1 max=9999 id="pricePhoto" placeholder="Введите количество фото для ретуши" />
                 </div>
             
                 <div class="button button-form button-save">Сохранить</div>
@@ -259,7 +258,7 @@
                     <img src="./assets/images/location-img.svg" alt="">
                 </div>
                 <form action="" class="form__main form__main-popUp">
-                    <div class="form__title">Форма обратной связи</div>
+                    <div class="form__title">Форма выбора локации</div>
     
                     <div class="form__inputs">
                         <label for="">Имя</label>
@@ -364,37 +363,41 @@
     <section class="slider">
         <div class="slider__title">Наши работы</div>
     
-        <div class="slider__buttons">
-            <div class="button__slide button__slide-main">
-                <svg class="arrow">
-                    <use xlink:href="#arrow"></use>
-                </svg>
-            </div>
-            <div class="button__slide button__slide-right button__slide-main">
-                <svg class="arrow arrow-right">
-                    <use xlink:href="#arrow"></use>
-                </svg>
-            </div>
-        </div>
+        
     
         <div class="slider__wrapper">
-            <div class="slider__item">
-                <img src="./assets/images/slider/Pic left.png  " alt="page" />
+            <div class="slider__wrapper-do">
+                <div class="slider__item ">
+                    <img src="./assets/images/slider/Pic left.png  " alt="page" />
+                </div>
+                <div class="slider__item active">
+                    <img src="./assets/images/slider/Pic Center.png" alt="page" />
+                </div>
+                <div class="slider__item">
+                    <img src="./assets/images/slider/Pic Right.png " alt="page" />
+                </div>
+                <div class="slider__item">
+                    <img src="./assets/images/slider/Pic left.png  " alt="page" />
+                </div>
             </div>
-            <div class="slider__item active">
-                <img src="./assets/images/slider/Pic Center.png" alt="page" />
-            </div>
-            <div class="slider__item">
-                <img src="./assets/images/slider/Pic Right.png " alt="page" />
-            </div>
-            <div class="slider__item">
-                <img src="./assets/images/slider/Pic left.png  " alt="page" />
+    
+            <div class="slider__buttons">
+                <div class="button__slide button__slide-main"  id="button__slide-main-prev">
+                    <svg class="arrow">
+                        <use xlink:href="#arrow"></use>
+                    </svg>
+                </div>
+                <div class="button__slide button__slide-right button__slide-main" id="button__slide-main-next">
+                    <svg class="arrow arrow-right">
+                        <use xlink:href="#arrow"></use>
+                    </svg>
+                </div>
             </div>
         </div>
     
         <div class="slider__dots">
-            <div class="slider__dot active"></div>
             <div class="slider__dot"></div>
+            <div class="slider__dot active"></div>
             <div class="slider__dot"></div>
             <div class="slider__dot"></div>
         </div>

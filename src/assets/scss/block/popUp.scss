@@ -222,20 +222,26 @@
     }
 }
 
-.popUp__reviews{
+.popUp__reviews {
     display: none;
 
     position: relative;
-    width: 1080px;
-    height: 610px;
+    width: 1030px;
+    height: 620px;
+
 
     background: $white;
 
-    padding: 60px 40px 60px 34px;
+    justify-content: center;
 
     border-radius: 15px;
 
     &.active {
         display: flex;
     }
+}
+
+
+.form__title-reviws {
+    font-size: 32px;
 }

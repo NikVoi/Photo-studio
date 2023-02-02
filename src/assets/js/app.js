@@ -27,7 +27,6 @@ buttonOpen.forEach(elem => {
             if (elem.classList.toggle('active')){
                 elem.classList.add('active')
                 elem.parentElement.parentElement.classList.add('active')
-                block.classList.add("block")
             }
             else {
                 elem.classList.remove('active')
@@ -59,6 +58,20 @@ graduateButton.addEventListener("click", () => {
     graduateform.classList.add("active")
 })
 
+
+//##############################
+//##### Form location ##########
+//##############################
+
+const location = document.querySelector(".button-location"),
+        locationForm = document.querySelector(".popUp__location")
+
+location.addEventListener("click", () => {
+    mainPopUp.classList.add("active")
+    locationForm.classList.add("active")
+    block.classList.add("block")
+})
+
 //###############################
 //####### Slider location #######
 //###############################
@@ -68,45 +81,45 @@ const   locationButtonNext = document.querySelector("#swiper-button-location-nex
         locationNav = document.querySelector(".location__nav"),
         windowWidth = document.documentElement.clientWidth;
         
-        let move = 0;
+let move = 0;
 
-        const doSwipe = (locationNav, move) => { 
-            locationNav.style.left = -move + 'px';
+const doSwipe = (locationNav, move) => { 
+    locationNav.style.left = -move + 'px';
+}
+
+const swiperLocation = (wrapper, moveStep, moveStepMax, buttonNext, buttonPrev) => {
+
+    let move = 0;
+
+    buttonNext.addEventListener('click', () => {
+        move += moveStep;
+        
+        if(move > moveStepMax){
+            move = 0;
         }
+    
+        doSwipe(wrapper, move);
+    });
 
-        const swiperLocation = (wrapper, moveStep, moveStepMax, buttonNext, buttonPrev) => {
-
-            let move = 0;
-
-            buttonNext.addEventListener('click', () => {
-                move += moveStep;
-                
-                if(move > moveStepMax){
-                    move = 0;
-                }
-            
-                doSwipe(wrapper, move);
-            });
-
-            buttonPrev.addEventListener('click', () => {
-                move -= moveStep;
-            
-                if(move < 0){
-                    move = moveStepMax;
-                }
-               
-                doSwipe(wrapper, move);
-            });
+    buttonPrev.addEventListener('click', () => {
+        move -= moveStep;
+    
+        if(move < 0){
+            move = moveStepMax;
         }
+        
+        doSwipe(wrapper, move);
+    });
+}
 
-        swiperLocation(locationNav, 421, 842, locationButtonNext, locationButtonPrev)
+swiperLocation(locationNav, 421, 842, locationButtonNext, locationButtonPrev)
 
-        if (windowWidth <= 1240){
-            swiperLocation(locationNav, 285, 570, locationButtonNext, locationButtonPrev)
-        }
-        if (windowWidth <= 892) {
-            swiperLocation(locationNav, 350, 1400, locationButtonNext, locationButtonPrev)
-        }
+if (windowWidth <= 1240){
+    swiperLocation(locationNav, 285, 570, locationButtonNext, locationButtonPrev)
+}
+if (windowWidth <= 892) {
+    swiperLocation(locationNav, 350, 1400, locationButtonNext, locationButtonPrev)
+}
         
         
 //##############################
@@ -117,55 +130,140 @@ const   reviewsButtonNext = document.querySelector("#swiper-button-reviews-next"
         reviewsButtonPrev = document.querySelector("#swiper-button-reviews-prev"),
         reviewsNav = document.querySelector(".reviews__slider-wrapper");
 
-        console.log(reviewsNav);
+const swiperReviews = (wrapper, moveStep, moveStepMax, buttonNext, buttonPrev) => {
+    let move = 0;
+
+    buttonNext.addEventListener('click', () => {
+        move += moveStep;
         
-        const swiperReviews = (wrapper, moveStep, moveStepMax, buttonNext, buttonPrev) => {
-            let move = 0;
-
-            buttonNext.addEventListener('click', () => {
-                move += moveStep;
-                
-                if(move > moveStepMax){
-                    move = 0;
-                }
-
-                wrapper.classList.add("slide-move-right")
-                
-                wrapper.addEventListener("animationend", () =>{
-                    wrapper.classList.remove("slide-move-right")
-                })
-            
-                doSwipe(wrapper, move);
-            });
-
-            buttonPrev.addEventListener('click', () => {
-                move -= moveStep;
-            
-                if(move < 0){
-                    move = moveStepMax;
-                }
-
-                wrapper.classList.add("slide-move-left")
-                
-                wrapper.addEventListener("animationend", () =>{
-                    wrapper.classList.remove("slide-move-left")
-                })
-               
-                doSwipe(wrapper, move);
-            });
-
+        if(move > moveStepMax){
+            move = 0;
         }
 
-        // console.log(reviewsNav.children[0].children[0].classList.add("slide-move-left"));
+        wrapper.classList.add("slide-move-right")
+        
+        wrapper.addEventListener("animationend", () =>{
+            wrapper.classList.remove("slide-move-right")
+        })
+    
+        doSwipe(wrapper, move);
+    });
 
-        swiperReviews(reviewsNav, 1040, 1041, reviewsButtonNext, reviewsButtonPrev)
+    buttonPrev.addEventListener('click', () => {
+        move -= moveStep;
+    
+        if(move < 0){
+            move = moveStepMax;
+        }
 
-        if (windowWidth <= 1240){
-            swiperReviews(reviewsNav, 720, 1450, reviewsButtonNext, reviewsButtonPrev)
+        wrapper.classList.add("slide-move-left")
+        
+        wrapper.addEventListener("animationend", () =>{
+            wrapper.classList.remove("slide-move-left")
+        })
+        
+        doSwipe(wrapper, move);
+    });
+
+}
+
+
+swiperReviews(reviewsNav, 1040, 1041, reviewsButtonNext, reviewsButtonPrev)
+
+if (windowWidth <= 1240)
+    swiperReviews(reviewsNav, 720, 1450, reviewsButtonNext, reviewsButtonPrev)
+if (windowWidth <= 892) 
+    swiperReviews(reviewsNav, 360, 1800, reviewsButtonNext, reviewsButtonPrev)
+        
+
+//##############################
+//######### Slider main ########
+//##############################
+
+const buttonSlideMainNext = document.querySelector("#button__slide-main-next"),
+    buttonSlideMainPrev = document.querySelector("#button__slide-main-prev"),
+    mainSlideItem = document.querySelector(".slider__wrapper-do"),
+    itemSlide = document.querySelectorAll(".slider__item"),
+    itemDot = document.querySelectorAll(".slider__dot")
+    
+
+let index = 1;
+
+const activeSlide = n => {
+    for(slide of itemSlide){
+        slide.classList.remove('active');
+    }
+    itemSlide[n].classList.add('active');
+}   
+
+const prepareCurrentSlide = ind =>{
+    activeSlide(ind);
+    activeDot(ind);
+}
+
+const activeDot = n => {
+    for(dot of itemDot){
+        dot.classList.remove('active');
+    }
+    itemDot[n].classList.add('active');
+}
+
+const nextSlide = () =>{
+    if(index === itemSlide.length - 1){
+        index = 0;
+        prepareCurrentSlide(index);
+    }else{
+        index++;
+        prepareCurrentSlide(index);
+    }
+}
+
+const prevSlide = () => {
+    if(index == 0){
+        index = itemSlide.length - 1;
+        prepareCurrentSlide(index);
+    }else{
+        index--;
+        prepareCurrentSlide(index);
+    }
+}
+
+const swiperMain = (wrapper, moveStep, moveStepMax, moveMin, buttonNext, buttonPrev) => {
+    let move = 0;
+
+    buttonNext.addEventListener('click', () => {
+        move += moveStep;
+        
+        if(move > moveStepMax){
+            move = moveMin;
         }
-        if (windowWidth <= 892) {
-            swiperReviews(reviewsNav, 360, 1800, reviewsButtonNext, reviewsButtonPrev)
+
+        doSwipe(wrapper, move);
+        nextSlide()
+    });
+
+    buttonPrev.addEventListener('click', () => {
+        move -= moveStep;
+    
+        if(move < moveMin){
+            move = moveStepMax;
         }
+        
+        doSwipe(wrapper, move);
+        prevSlide()
+    });
+
+}
+
+if (windowWidth > 1240)
+    swiperMain(mainSlideItem, 480, 960, -480, buttonSlideMainNext, buttonSlideMainPrev)
+if (windowWidth < 1240 && windowWidth > 960)
+    swiperMain(mainSlideItem, 350, 1000, -350, buttonSlideMainNext, buttonSlideMainPrev)
+if (windowWidth <= 960 && windowWidth > 640) 
+    swiperMain(mainSlideItem, 230, 460, -230, buttonSlideMainNext, buttonSlideMainPrev)
+if (windowWidth <= 640) 
+    swiperMain(mainSlideItem, 200, 400, -200, buttonSlideMainNext, buttonSlideMainPrev)
+
 
 
 //##############################
