@@ -2044,6 +2044,11 @@ textarea {
     transition: 0.5s;
     bottom: 25px;
   }
+  .button__slide svg {
+    position: absolute;
+    top: 12px;
+    left: 20px;
+  }
   .location .button__slide {
     width: 64px;
     height: 64px;
@@ -2656,6 +2661,11 @@ textarea {
     height: 280px;
     border-radius: 10px;
   }
+  .button__slide svg {
+    position: absolute;
+    top: 9px;
+    left: 7px;
+  }
   .location .button__slide {
     width: 36px;
     height: 36px;
@@ -2668,11 +2678,6 @@ textarea {
     left: 165px;
     top: 130px;
     transform: rotate(180deg);
-  }
-  .location .button__slide svg {
-    fill: #fff;
-    width: 9px;
-    height: 18px;
   }
   .decoration__titel {
     font-size: 24px;

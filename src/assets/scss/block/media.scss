@@ -230,6 +230,16 @@
         }
     }
 
+    .button__slide {
+        & svg {
+            position: absolute;
+    
+            top: 12px;
+            left: 20px;
+        }
+    }
+    
+
     .location .button__slide {
         width: 64px;
         height: 64px;
@@ -1036,6 +1046,15 @@
         }
     }
 
+    .button__slide {
+        & svg {
+            position: absolute;
+    
+            top: 9px;
+            left: 7px;
+        }
+    }
+
     .location .button__slide {
         width: 36px;
         height: 36px;
@@ -1051,11 +1070,6 @@
             top: 130px;
 
             transform: rotate(180deg);
-        }
-        & svg {
-            fill: $white;
-            width: 9px;
-            height: 18px;
         }
     }
 
