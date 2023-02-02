@@ -61,4 +61,8 @@ hr {
     overflow-y: hidden
 }
 
+textarea {
+    resize: none;
+}
+
 @import "../scss/block/media.scss";

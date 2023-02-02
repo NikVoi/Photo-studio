@@ -139,15 +139,13 @@
     left: 0;
     top: 0;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
     background: $white;
     width: 73px;
     height: 73px;
 
     border-radius: 50%;
+
+    filter: drop-shadow(0px 2px 10px rgba(0, 0, 0, 0.15));
 
     z-index: 2;
 
@@ -162,6 +160,11 @@
     }
 
     & svg {
+        position: absolute;
+
+        top: 18px;
+        left: 24px;
+
         fill: $white;
         stroke: $accentCol;
         width: 20px;
@@ -190,6 +193,15 @@
         }
 
         box-shadow: 0px 0px 10px -0px rgba(0, 0, 0, 0.2);
+    }
+}
+
+.location .button__slide {
+    left: -35px;
+    top: 140px;
+
+    &-right {
+        left: 1205px;
     }
 }
 

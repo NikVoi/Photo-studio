@@ -251,13 +251,11 @@ nav {
   position: absolute;
   left: 0;
   top: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   background: #fff;
   width: 73px;
   height: 73px;
   border-radius: 50%;
+  filter: drop-shadow(0px 2px 10px rgba(0, 0, 0, 0.15));
   z-index: 2;
   cursor: pointer;
 }
@@ -268,6 +266,9 @@ nav {
   transform: rotate(180deg);
 }
 .button__slide svg {
+  position: absolute;
+  top: 18px;
+  left: 24px;
   fill: #fff;
   stroke: #E97522;
   width: 20px;
@@ -289,6 +290,14 @@ nav {
 .button__slide-reviews-right {
   position: static;
   transform: rotate(180deg);
+}
+
+.location .button__slide {
+  left: -35px;
+  top: 140px;
+}
+.location .button__slide-right {
+  left: 1205px;
 }
 
 .button__open {
@@ -1856,6 +1865,10 @@ hr {
   overflow-y: hidden;
 }
 
+textarea {
+  resize: none;
+}
+
 @media (max-width: 1240px) {
   .container {
     width: calc(100% - 80px);
@@ -2386,6 +2399,10 @@ hr {
   }
   .popUp__reviews .button-form {
     width: 380px;
+  }
+  .popUp__reviews .form__input-reviews {
+    padding: 18px 16px;
+    height: 100px;
   }
 }
 @media (max-width: 892px) {
@@ -3349,6 +3366,10 @@ hr {
   }
   .popUp__reviews .button-form {
     width: 280px;
+  }
+  .popUp__reviews .form__input-reviews {
+    padding: 10px 4px 10px 12px;
+    height: 80px;
   }
 }
 @media (max-width: 1440px) {

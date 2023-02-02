@@ -702,7 +702,11 @@
     .popUp__reviews .button-form {
         width: 380px;
     }
-
+    
+    .popUp__reviews .form__input-reviews {
+        padding: 18px 16px;
+        height: 100px;
+    }
 }
 
 @media (max-width: 892px) {
@@ -1981,6 +1985,11 @@
 
     .popUp__reviews .button-form {
         width: 280px;
+    }
+
+    .popUp__reviews .form__input-reviews {
+        padding: 10px 4px 10px 12px;
+        height: 80px;
     }
 
 }

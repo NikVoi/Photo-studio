@@ -63,12 +63,25 @@ graduateButton.addEventListener("click", () => {
 //##### Form location ##########
 //##############################
 
-const location = document.querySelector(".button-location"),
+const   location = document.querySelector(".button-location"),
         locationForm = document.querySelector(".popUp__location")
 
 location.addEventListener("click", () => {
     mainPopUp.classList.add("active")
     locationForm.classList.add("active")
+    block.classList.add("block")
+})
+
+//##############################
+//##### Form location ##########
+//##############################
+
+const   reviews = document.querySelector(".button__reviews")
+        reviewsForm = document.querySelector(".popUp__reviews")
+
+reviews.addEventListener("click", () => {
+    mainPopUp.classList.add("active")
+    reviewsForm.classList.add("active")
     block.classList.add("block")
 })
 
@@ -114,12 +127,11 @@ const swiperLocation = (wrapper, moveStep, moveStepMax, buttonNext, buttonPrev) 
 
 swiperLocation(locationNav, 421, 842, locationButtonNext, locationButtonPrev)
 
-if (windowWidth <= 1240){
+if (windowWidth <= 1240)
     swiperLocation(locationNav, 285, 570, locationButtonNext, locationButtonPrev)
-}
-if (windowWidth <= 892) {
+if (windowWidth <= 892)
     swiperLocation(locationNav, 350, 1400, locationButtonNext, locationButtonPrev)
-}
+
         
         
 //##############################

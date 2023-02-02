@@ -339,6 +339,15 @@ nav {
     transform: rotate(180deg);
 }
 
+.location .button__slide {
+    left: -35px;
+    top: 140px;
+}
+
+.location .button__slide-right {
+    left: 1205px;
+}
+
 .button__open {
     display: -ms-flexbox;
     display: flex;
@@ -780,6 +789,7 @@ location {
     display: -ms-flexbox;
     display: flex;
     max-width: 1440px;
+    min-width: 375px;
     margin: 0 auto;
     overflow-x: hidden;
     height: 620px;
@@ -790,13 +800,15 @@ location {
     display: flex;
     -ms-flex-align: center;
     align-items: center;
+    position: relative;
+    transition: 0.3s;
 }
 
 .slider__item {
     position: relative;
     width: 480px;
     height: 545px;
-    left: -20px;
+    left: -50px;
     cursor: pointer;
     transition: 0.3s;
 }
@@ -815,7 +827,7 @@ location {
 .slider__buttons {
     position: absolute;
     width: 200px;
-    left: 330px;
+    left: 300px;
     top: 270px;
 }
 
@@ -2312,14 +2324,14 @@ hr {
         bottom: 25px;
     }
 
-    .button__slide {
+    .location .button__slide {
         width: 64px;
         height: 64px;
         left: -445px;
         top: 90px;
     }
 
-    .button__slide-right {
+    .location .button__slide-right {
         position: absolute;
         left: 400px;
         top: 90px;
@@ -3084,7 +3096,7 @@ hr {
         border-radius: 10px;
     }
 
-    .button__slide {
+    .location .button__slide {
         width: 36px;
         height: 36px;
         z-index: 2;
@@ -3092,7 +3104,7 @@ hr {
         top: 130px;
     }
 
-    .button__slide-right {
+    .location .button__slide-right {
         position: absolute;
         left: 165px;
         top: 130px;
@@ -3100,7 +3112,7 @@ hr {
         transform: rotate(180deg);
     }
 
-    .button__slide svg {
+    .location .button__slide svg {
         fill: #fff;
         width: 9px;
         height: 18px;
@@ -3982,5 +3994,153 @@ hr {
 
     .popUp__reviews .button-form {
         width: 280px;
+    }
+}
+
+@media (max-width: 1440px) {
+    .slider__wrapper {
+        max-width: inherit;
+    }
+
+    .slider__item {
+        left: -80px;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+    .slider__buttons {
+        position: absolute;
+        width: 200px;
+        left: 270px;
+        top: 270px;
+    }
+}
+
+@media (max-width: 1240px) {
+    .slider__wrapper {
+        width: 960px;
+        height: 450px;
+    }
+
+    .slider__item {
+        width: 350px;
+        height: 400px;
+        left: -100px;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+    .slider__item.active {
+        width: 400px;
+        height: 450px;
+    }
+
+    .slider__buttons {
+        position: absolute;
+        width: 200px;
+        left: 270px;
+        top: 200px;
+    }
+
+    .button__slide {
+        width: 64px;
+        height: 64px;
+        left: -100px;
+        top: 0px;
+    }
+
+    .button__slide-right {
+        left: 395px;
+    }
+}
+
+@media (max-width: 960px) {
+    .slider__wrapper {
+        width: 640px;
+        height: 290px;
+    }
+
+    .slider__item {
+        width: 230px;
+        height: 250px;
+        left: -40px;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+    .slider__item.active {
+        width: 260px;
+        height: 290px;
+    }
+
+    .slider__buttons {
+        position: absolute;
+        width: 200px;
+        left: 260px;
+        top: 130px;
+    }
+
+    .button__slide {
+        width: 36px;
+        height: 36px;
+        left: -120px;
+        top: 0px;
+    }
+
+    .button__slide-right {
+        left: 200px;
+    }
+
+    .button__slide svg {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+@media (max-width: 640px) {
+    .slider__wrapper {
+        width: 375px;
+        height: 260px;
+    }
+
+    .slider__title {
+        padding-top: 100px;
+        padding-bottom: 40px;
+    }
+
+    .slider__item {
+        width: 200px;
+        height: 230px;
+        left: -125px;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+    .slider__item.active {
+        width: 230px;
+        height: 260px;
+    }
+
+    .slider__buttons {
+        position: absolute;
+        width: 200px;
+        left: 270px;
+        top: 120px;
+    }
+
+    .button__slide {
+        width: 36px;
+        height: 36px;
+        left: -250px;
+        top: 0px;
+    }
+
+    .button__slide-right {
+        left: 50px;
+    }
+
+    .button__slide svg {
+        width: 20px;
+        height: 20px;
     }
 }
