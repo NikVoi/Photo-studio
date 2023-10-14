@@ -595,7 +595,7 @@ location {
 .work > .container {
     position: relative;
     height: 1240px;
-    background-image: url("/assets/images/bg-line2.png");
+    background-image: url("../../assets/images/bg-line2.png");
     background-repeat: no-repeat;
     background-position: 120px 280px;
     background-size: 90% 60%;
@@ -980,7 +980,7 @@ location {
 
 .card__mini {
     background: #F2F4F4;
-    background-image: url("/assets/images/Background-card.png");
+    background-image: url("../../assets/images/Background-card.png");
     background-repeat: no-repeat;
     background-size: 264px;
     background-position: top right;
@@ -989,7 +989,7 @@ location {
 
 .card__standart {
     background: #F9F4EE;
-    background-image: url("/assets/images/Background-card.png");
+    background-image: url("../../assets/images/Background-card.png");
     background-repeat: no-repeat;
     background-size: 264px;
     background-position: top right;
@@ -999,7 +999,7 @@ location {
 .card__maxi {
     height: 706px;
     background: #F5D9C6;
-    background-image: url("/assets/images/Background-card.png");
+    background-image: url("../../assets/images/Background-card.png");
     background-repeat: no-repeat;
     background-size: 264px;
     background-position: top right;
@@ -1204,19 +1204,19 @@ location {
 }
 
 .reviews__img-1 {
-    background-image: url("/assets/images/reviews/bg-2.png");
+    background-image: url("./assets/images/reviews/bg-2.png");
     background-repeat: no-repeat;
     background-position: top -2px left 10px;
 }
 
 .reviews__img-2 {
-    background-image: url("/assets/images/reviews/bg-1.png");
+    background-image: url("./assets/images/reviews/bg-1.png");
     background-repeat: no-repeat;
     background-position: top -2px left;
 }
 
 .reviews__img-3 {
-    background-image: url("/assets/images/reviews/bg-3.png");
+    background-image: url("./assets/images/reviews/bg-3.png");
     background-repeat: no-repeat;
     background-position: top 5px left -5px;
 }
@@ -1262,7 +1262,7 @@ location {
 }
 
 .price {
-    background-image: url("/assets/images/bg-line-card.png");
+    background-image: url("./assets/images/bg-line-card.png");
     background-repeat: no-repeat;
     background-size: 100% 95%;
     background-position: 0 80px;
@@ -1338,7 +1338,7 @@ location {
     flex-direction: column;
     padding: 80px 36px;
     background: #F2F4F4;
-    background-image: url("/assets/images/Background-card.png"), url("/assets/images/Background-form.png");
+    background-image: url("./assets/images/Background-card.png"), url("./assets/images/Background-form.png");
     background-repeat: no-repeat;
     background-size: 200px, 332px;
     background-position: top right -50px, bottom -65px left -55px;
@@ -2256,7 +2256,7 @@ textarea {
     }
 
     .work {
-        background-image: url("/assets/images/bg-line3.png");
+        background-image: url("./assets/images/bg-line3.png");
         background-repeat: no-repeat;
         background-position: 0px 220px;
         background-size: 100% 70%;
@@ -2310,7 +2310,7 @@ textarea {
     .location {
         position: relative;
         padding-bottom: 80px;
-        background-image: url("/images/bg-line.png");
+        background-image: url("./images/bg-line.png");
         background-position: 0px 0px;
         background-repeat: no-repeat;
         background-size: 100% 100%;
@@ -2502,7 +2502,7 @@ textarea {
     }
 
     .price {
-        background-image: url("/assets/images/bg-line-card-rotade.png");
+        background-image: url("./assets/images/bg-line-card-rotade.png");
         background-repeat: no-repeat;
         background-size: 100% 95%;
         background-position: 0 150px;
@@ -2603,19 +2603,19 @@ textarea {
     }
 
     .reviews__img-1 {
-        background-image: url("/assets/images/reviews/bg-2.png");
+        background-image: url("./assets/images/reviews/bg-2.png");
         background-repeat: no-repeat;
         background-position: top -5px left 10px;
     }
 
     .reviews__img-2 {
-        background-image: url("/assets/images/reviews/bg-1.png");
+        background-image: url("./assets/images/reviews/bg-1.png");
         background-repeat: no-repeat;
         background-position: top -2px left;
     }
 
     .reviews__img-3 {
-        background-image: url("/assets/images/reviews/bg-3.png");
+        background-image: url("./assets/images/reviews/bg-3.png");
         background-repeat: no-repeat;
         background-position: top 5px left -5px;
     }
@@ -3011,7 +3011,7 @@ textarea {
         -ms-flex-align: center;
         align-items: center;
         height: 1250px;
-        background-image: url("/assets/images/bg-line4.png");
+        background-image: url("./assets/images/bg-line4.png");
         background-repeat: no-repeat;
         background-position: 0px 200px;
         background-size: 100% 70%;
@@ -3106,7 +3106,7 @@ textarea {
     .location {
         position: relative;
         padding-bottom: 80px;
-        background-image: url("/images/bg-line.png");
+        background-image: url("./images/bg-line.png");
         background-position: 0px 0px;
         background-repeat: no-repeat;
         background-size: 100% 100%;
@@ -3593,20 +3593,20 @@ textarea {
     }
 
     .reviews__img-1 {
-        background-image: url("/assets/images/reviews/bg-2.png");
+        background-image: url("./assets/images/reviews/bg-2.png");
         background-repeat: no-repeat;
         background-position: top 15px left 17px;
         background-size: 90%;
     }
 
     .reviews__img-2 {
-        background-image: url("/assets/images/reviews/bg-1.png");
+        background-image: url("./assets/images/reviews/bg-1.png");
         background-repeat: no-repeat;
         background-position: top -2px left;
     }
 
     .reviews__img-3 {
-        background-image: url("/assets/images/reviews/bg-3.png");
+        background-image: url("./assets/images/reviews/bg-3.png");
         background-repeat: no-repeat;
         background-position: top 5px left -5px;
     }
@@ -3790,7 +3790,7 @@ textarea {
         left: 112px;
         width: 24px;
         height: 24px;
-        background-image: url("/assets/images/done.svg");
+        background-image: url("./assets/images/done.svg");
         background-repeat: no-repeat;
         background-size: 24px 24px;
     }
