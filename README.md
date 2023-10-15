@@ -1,6 +1,4 @@
 # Photo-studio
-<<<<<<< HEAD
-=======
 
 Photo-studio is a one-page website Photo Studio. This project showcases the studio's portfolio, contact information, and the ability to book a photo session. The website is responsive, providing both mobile and desktop versions.
 
@@ -27,4 +25,3 @@ You can access the live version of the project here: https://nikvoi.github.io/Ph
 - **SCSS**: SCSS (Sass) is used for more maintainable and modular stylesheets, making it easier to manage the design.
 
 - **JavaScript**: JavaScript is employed to add interactivity to the website, making the cards and sliders functional.
->>>>>>> 6295513497200de22f550cd60c868bdfa987a923
